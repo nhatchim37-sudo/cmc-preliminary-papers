@@ -3,304 +3,970 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CMC 全国大学生数学竞赛 · 初赛真题库</title>
+<meta name="description" content="CMC 全国大学生数学竞赛历年真题：初赛第10–17届、决赛第1–16届。按阶段、组别、届次筛选，直接打开或下载 PDF，附决赛来源记录。">
+<meta name="color-scheme" content="light">
+<title>CMC 全国大学生数学竞赛 · 初赛与决赛真题库</title>
 <style>
-  :root {
-    --bg:#f6f7f9; --panel:#fff; --ink:#16181d; --ink2:#5b6270; --line:#e6e8ee;
-    --accent:#2f5bd7; --math:#4b3fbf; --nonmath:#0f766e; --bu:#b45309; --ans:#15803d;
-  }
-  * { box-sizing:border-box; }
-  body { margin:0; background:var(--bg); color:var(--ink);
-    font-family:"PingFang SC","Microsoft YaHei",-apple-system,"Segoe UI",sans-serif;
-    -webkit-font-smoothing:antialiased; }
-  .wrap { max-width:960px; margin:0 auto; padding:48px 24px 72px; }
-  h1 { font-size:31px; margin:0 0 10px; letter-spacing:-.5px; }
-  .sub { color:var(--ink2); margin:0; font-size:14.5px; line-height:1.75; }
-  .stats { display:flex; gap:30px; margin:24px 0 6px; flex-wrap:wrap; }
-  .stat b { font-size:26px; color:var(--accent); }
-  .stat span { display:block; font-size:12px; color:var(--ink2); margin-top:2px; }
-  .bar { display:flex; gap:8px; margin:22px 0 26px; flex-wrap:wrap; }
-  .chip { border:1px solid var(--line); background:var(--panel); color:var(--ink2);
-    padding:7px 15px; border-radius:999px; font-size:13px; cursor:pointer; transition:.15s; }
-  .chip:hover { border-color:#c9cfdd; }
-  .chip.on { background:var(--ink); color:#fff; border-color:var(--ink); }
-  .card { background:var(--panel); border:1px solid var(--line); border-radius:14px;
-    padding:18px 20px; margin-bottom:14px; }
-  .card header { display:flex; align-items:baseline; gap:10px; padding-bottom:12px;
-    border-bottom:1px solid var(--line); margin-bottom:12px; }
-  .card h2 { font-size:17px; margin:0; }
-  .yr { font-size:12px; color:var(--ink2); }
-  .files { display:grid; grid-template-columns:repeat(auto-fill,minmax(285px,1fr)); gap:10px; }
-  .file { display:block; text-decoration:none; color:inherit; border:1px solid var(--line);
-    border-radius:10px; padding:12px 14px; transition:.15s; }
-  .file:hover { border-color:var(--accent); box-shadow:0 4px 14px rgba(47,91,215,.10); transform:translateY(-1px); }
-  .ftags { display:flex; gap:6px; margin-bottom:8px; flex-wrap:wrap; }
-  .tag { font-size:11px; padding:2px 7px; border-radius:5px; font-weight:600; }
-  .tag.math { background:#eeecfb; color:var(--math); }
-  .tag.nonmath { background:#e6f4f1; color:var(--nonmath); }
-  .tag.bu { background:#fdf0dc; color:var(--bu); }
-  .tag.ans { background:#e8f5ec; color:var(--ans); }
-  .tag.noans { background:#f1f2f5; color:#6b7280; }
-  .fname { font-size:13.5px; line-height:1.55; }
-  .fmeta { font-size:12px; color:var(--ink2); margin-top:6px; }
-  .note { background:var(--panel); border:1px solid var(--line); border-left:3px solid var(--accent);
-    border-radius:12px; padding:18px 20px; margin-top:26px; }
-  .note h3 { font-size:15px; margin:0 0 10px; }
-  .note ul { margin:0; padding-left:18px; color:var(--ink2); font-size:13.5px; line-height:1.95; }
-  .note a { color:var(--accent); text-decoration:none; }
-  .note a:hover { text-decoration:underline; }
-  code { background:#f1f2f5; padding:1px 5px; border-radius:4px; font-size:12.5px; }
-  .big { display:block; text-align:center; text-decoration:none; background:var(--accent); color:#fff;
-    padding:13px 18px; border-radius:11px; font-size:14px; font-weight:600; margin:0 0 16px;
-    box-shadow:0 6px 18px rgba(47,91,215,.22); }
-  .big:hover { background:#2649b3; }
-  .hint { margin:22px 0 8px; font-size:12.5px; color:#8b919c; text-align:center; }
-  footer { margin-top:30px; color:#8b919c; font-size:12px; text-align:center; line-height:1.8; }
+:root{--bg:#f5f7fb;--panel:#fff;--ink:#172034;--muted:#5e687c;--line:#e0e6ef;--accent:#315dce;--blue-soft:#edf2ff;--green:#16675d;--purple:#5541a7;--radius:14px}
+*{box-sizing:border-box} [hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.65 "PingFang SC","Microsoft YaHei",-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-underline-offset:3px}button,select{font:inherit}button,a,select{-webkit-tap-highlight-color:transparent}
+a:focus-visible,button:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #b45a16;outline-offset:4px}
+.wrap{max-width:1060px;margin:auto;padding:34px 24px 52px}.topline{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:35px;font-size:12px;letter-spacing:.08em}.brand{font-weight:750;color:var(--accent);font-size:15px}.topline a{color:var(--muted);text-decoration:none;letter-spacing:0}
+.hero{position:relative;padding:0 0 25px;border-bottom:1px solid var(--line)}.eyebrow{color:var(--accent);font-size:12px;font-weight:700;letter-spacing:.12em;margin:0 0 9px}h1{font-size:clamp(25px,4vw,36px);line-height:1.35;letter-spacing:-.6px;margin:0 0 14px}.sub{color:var(--muted);max-width:760px;margin:0;font-size:14px;line-height:1.9}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:24px 0 0}.stat{padding:16px 18px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius)}.stat b{display:block;font-size:28px;line-height:1.3;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums}.stat span{display:block;font-size:12px;color:var(--muted);margin-top:4px}.stat small{font-size:13px;font-weight:500;margin-left:5px;color:var(--ink)}
+.filters{margin:24px 0;padding:20px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius)}.filter-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.filter-row+.filter-row{margin-top:16px;padding-top:16px;border-top:1px solid var(--line)}.filter-label{font-size:12px;color:var(--muted);margin-right:8px}.chip{border:1px solid var(--line);background:#fff;color:var(--muted);padding:7px 14px;border-radius:8px;font-size:13px;cursor:pointer}.chip:hover{border-color:var(--accent);color:var(--accent)}.chip.on{background:var(--accent);color:#fff;border-color:var(--accent)}.chip span{font-size:11px;margin-left:5px;opacity:.85}.select-label{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted);margin-left:8px}select{background:#fff;color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:7px 28px 7px 9px;max-width:100%}.reset{margin-left:auto;border:0;background:transparent;color:var(--accent);cursor:pointer;font-size:12px;padding:7px}.result{color:var(--muted);font-size:12px;margin:16px 0 0}
+.section-heading{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:29px 0 12px}h2{margin:0;font-size:21px;letter-spacing:-.2px}.section-heading span{font-size:12px;color:var(--muted)}.section-intro{margin:0 0 15px;color:var(--muted);font-size:13px;line-height:1.85}.notice{padding:14px 16px;background:#fff8eb;border:1px solid #efd6a6;border-radius:10px;color:#795315;margin:15px 0 18px;font-size:12.5px}.notice strong{display:block;color:#664311;font-size:13px;margin-bottom:3px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;margin-bottom:16px}.edition-heading{display:flex;gap:12px;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:13px;margin-bottom:14px}.edition-heading h3{margin:0;font-size:17px}.edition-heading p{margin:4px 0 0;font-size:11.5px;color:var(--muted)}.stage-badge{margin-left:10px;vertical-align:middle;font-size:10px;font-weight:500;background:var(--blue-soft);color:var(--accent);padding:3px 6px;border-radius:4px}.edition-count{font-size:11px;color:var(--muted);white-space:nowrap}.files{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.file{min-width:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;transition:border-color .15s,box-shadow .15s;background:#fff}.file:hover,.file:focus-within{border-color:#94a8dc;box-shadow:0 3px 12px #315dce0d}.file-open{display:block;padding:14px 14px 10px;color:inherit;text-decoration:none}.ftags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:9px}.tag{font-size:10px;padding:2px 6px;border-radius:4px;font-weight:600}.tag.math{color:var(--purple);background:#f0edfc}.tag.nonmath{color:var(--green);background:#e7f4ef}.tag.answer{color:#376740;background:#eef6ef}.tag.plain{color:#5e687c;background:#f0f2f6}.tag.makeup{color:#925e13;background:#fff2d9}.fname{display:block;font-size:13px;font-weight:600;line-height:1.6;overflow-wrap:anywhere}.fmeta{display:flex;justify-content:space-between;gap:8px;margin-top:7px;font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums}.open-hint{color:var(--accent);white-space:nowrap}.file-actions{display:flex;justify-content:space-between;gap:10px;align-items:center;background:#fafbfd;border-top:1px solid #edf0f5;padding:8px 14px;font-size:11px}.file-actions a{text-decoration:none}.file-actions a:hover{text-decoration:underline}.source{color:var(--muted)}.version-note{display:block;font-size:10px;padding:7px 14px;color:var(--muted);border-top:1px solid #edf0f5}
+.bundle{display:flex;align-items:center;justify-content:space-between;gap:12px;text-decoration:none;background:var(--blue-soft);color:var(--accent);padding:15px 18px;border:1px solid #d6e1ff;border-radius:10px;margin:14px 0 18px}.bundle strong{font-size:13px}.bundle small{display:block;font-size:11px;margin-top:3px;font-weight:400}.empty{padding:35px 20px;text-align:center;color:var(--muted);border:1px dashed #c8d1e2;border-radius:12px;background:#fff}.empty strong{display:block;font-size:16px;color:var(--ink);margin-bottom:6px}
+.notes{background:var(--panel);padding:20px;border:1px solid var(--line);border-radius:var(--radius);margin-top:32px}.notes summary{cursor:pointer;font-weight:650;font-size:14px}.notes ul{padding-left:20px;margin:14px 0 0;color:var(--muted);font-size:12px;line-height:2}.notes li+li{margin-top:5px}.source-links{display:flex;gap:10px 18px;flex-wrap:wrap;margin-top:16px;font-size:12px}.footer{padding-top:25px;margin-top:24px;border-top:1px solid var(--line);font-size:11px;color:var(--muted);line-height:1.9;text-align:center}.footer p{margin:4px 0}.noscript{padding:12px;color:#795315;background:#fff8eb;border-radius:8px}
+@media(max-width:700px){.wrap{padding:22px 16px 35px}.topline{margin-bottom:25px}.stats{gap:8px}.stat{padding:13px 11px}.stat b{font-size:24px}.stat small{display:block;margin:2px 0 0;font-size:11px}.stat span{font-size:10px}.filters{padding:15px}.files{grid-template-columns:1fr}.card{padding:15px}.select-label{margin-left:0}.filter-label{width:100%;margin:0}.reset{margin-left:0}.chip{padding:7px 11px}.edition-count{font-size:10px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
 <body>
-<div class="wrap">
-  <h1>CMC 全国大学生数学竞赛 · 初赛真题</h1>
-  <p class="sub">中国数学会主办（China Collegiate Mathematics Contest）。以下为官方原卷 PDF 本地归档，点击卡片即可打开；覆盖数学类 A/B 与非数学类 A/B，大多附官方参考答案。</p>
-  <div class="stats">
-    <div class="stat"><b>32</b><span>份试卷</span></div>
-    <div class="stat"><b>8</b><span>届（第 10–17 届）</span></div>
-    <div class="stat"><b>270</b><span>页真题</span></div>
-  </div>
-  <div class="bar">
-    <button class="chip on" data-f="all">全部</button>
-    <button class="chip" data-f="数学类">数学类</button>
-    <button class="chip" data-f="非数学类">非数学类</button>
-  </div>
-  <a class="big" href="CMC初赛真题合集_第10-17届.pdf" rel="noopener">
-    打开合并版 · 单文件 270 页（第10–17届，带书签，可离线看）
+<main class="wrap">
+  <nav class="topline" aria-label="网站导航"><span class="brand">CMC / 真题档案</span><a href="https://github.com/nhatchim37-sudo/cmc-preliminary-papers">GitHub 仓库 ↗</a></nav>
+  <header class="hero">
+    <p class="eyebrow">CHINA COLLEGIATE MATHEMATICS CONTEST</p>
+    <h1>全国大学生数学竞赛<br>初赛与决赛真题库</h1>
+    <p class="sub">按届次整理公开试题与参考答案。初赛第 10–17 届、决赛第 1–16 届，可直接打开或下载 PDF；决赛文件均附可追溯来源，保留下载版本原样。</p>
+    <div class="stats" aria-label="归档统计">
+      <div class="stat"><b>32<small>个初赛 PDF</small></b><span>第 10–17 届 · 270 页</span></div>
+      <div class="stat"><b>71<small>个决赛 PDF</small></b><span>第 1–16 届 · 504 页</span></div>
+      <div class="stat"><b>774<small>页资料</small></b><span>103 个分卷文件 · 不含重复合集</span></div>
+    </div>
+  </header>
+  <noscript><p class="noscript">当前浏览器未启用 JavaScript，筛选不可用；下方全部文件仍可直接打开与下载。</p></noscript>
+  <section class="filters" aria-label="真题筛选" hidden>
+    <div class="filter-row" role="group" aria-label="比赛阶段"><span class="filter-label">比赛阶段</span>
+      <button type="button" class="chip on" data-stage="all" aria-pressed="true">全部<span>103</span></button>
+      <button type="button" class="chip" data-stage="preliminary" aria-pressed="false">初赛<span>32</span></button>
+      <button type="button" class="chip" data-stage="final" aria-pressed="false">决赛<span>71</span></button>
+    </div>
+    <div class="filter-row" role="group" aria-label="组别和届次"><span class="filter-label">试卷类别</span>
+      <button type="button" class="chip on" data-category="all" aria-pressed="true">全部</button>
+      <button type="button" class="chip" data-category="math" aria-pressed="false">数学类</button>
+      <button type="button" class="chip" data-category="nonmath" aria-pressed="false">非数学类</button>
+      <label class="select-label" for="group">细分组别<select id="group"><option value="all">全部组别</option></select></label>
+      <label class="select-label" for="edition">届次<select id="edition"><option value="all">全部届次</option><option value="17">第17届</option><option value="16">第16届</option><option value="15">第15届</option><option value="14">第14届</option><option value="13">第13届</option><option value="12">第12届</option><option value="11">第11届</option><option value="10">第10届</option><option value="9">第9届</option><option value="8">第8届</option><option value="7">第7届</option><option value="6">第6届</option><option value="5">第5届</option><option value="4">第4届</option><option value="3">第3届</option><option value="2">第2届</option><option value="1">第1届</option></select></label>
+      <button type="button" class="reset" id="reset">重置筛选</button>
+    </div>
+    <p class="result" id="result" role="status" aria-live="polite"></p>
+  </section>
+  <div class="empty" id="empty" hidden><strong>这个筛选组合暂无已归档文件</strong><span id="empty-note">可切换其他届次或组别；第17届决赛尚未归档。</span></div>
+  <section class="stage-section" data-stage="final" aria-labelledby="finals-heading">
+    <div class="section-heading"><h2 id="finals-heading">决赛真题</h2><span>第 1–16 届 · 45 个届次／组别组合</span></div>
+    <p class="section-intro">71 个 PDF 包含 26 份试题文件、26 份独立参考答案、19 份试题与解答同文件版本，并非 71 套独立试卷。数学类高／低年级与初赛 A／B 分类不同；年份按决赛实际举办年显示。</p>
+    <aside class="notice"><strong>第17届决赛：暂未收录可核验的完整原卷 PDF</strong>本次检索到的转载、回忆版及未核验图片不计入原卷归档。此处仅说明本库缺口，并不表示赛事尚未举办或其他地方没有资料。</aside>
+<section class="card" data-edition="16" aria-labelledby="final-16">
+  <header class="edition-heading"><div><h3 id="final-16">第 16 届<span class="stage-badge">决赛</span></h3><p>决赛举办年份 2025</p></div><span class="edition-count">4 个 PDF</span></header>
+  <div class="files"><article class="file" data-cat="math" data-group="math-low" data-pages="11">
+  <a class="file-open" href="finals/edition-16/math-low-combined.pdf" title="第十六届全国大学生数学竞赛决赛（数学类低年级组）试题及答案解析">
+    <span class="ftags"><span class="tag math">数学类低年级组</span><span class="tag answer">试题与参考答案</span></span>
+    <span class="fname">数学类低年级组 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 11 页 · 401 KB <span class="open-hint">打开 →</span></span>
   </a>
-  <section class="card">
-    <header><h2>第17届</h2><span class="yr">2025 年</span></header>
-    <div class="files">
-      <a class="file" rel="noopener" href="第11-17届/第十七届全国大学生数学竞赛初赛试题及参考答案（数学A类）.pdf" data-cat="数学类">
-        <div class="ftags"><span class="tag math">数学A类</span><span class="tag ans">含答案</span></div>
-        <div class="fname">第十七届全国大学生数学竞赛初赛试题及参考答案（数学A类）.pdf</div>
-        <div class="fmeta">11 页 · 2.9 MB</div>
-      </a>
-      <a class="file" rel="noopener" href="第11-17届/第十七届全国大学生数学竞赛初赛试题及参考答案（数学B类）.pdf" data-cat="数学类">
-        <div class="ftags"><span class="tag math">数学B类</span><span class="tag ans">含答案</span></div>
-        <div class="fname">第十七届全国大学生数学竞赛初赛试题及参考答案（数学B类）.pdf</div>
-        <div class="fmeta">9 页 · 2.0 MB</div>
-      </a>
-      <a class="file" rel="noopener" href="第11-17届/第十七届全国大学生数学竞赛初赛试题及参考答案（非数学A类）.pdf" data-cat="非数学类">
-        <div class="ftags"><span class="tag nonmath">非数学A类</span><span class="tag ans">含答案</span></div>
-        <div class="fname">第十七届全国大学生数学竞赛初赛试题及参考答案（非数学A类）.pdf</div>
-        <div class="fmeta">7 页 · 1.7 MB</div>
-      </a>
-      <a class="file" rel="noopener" href="第11-17届/第十七届全国大学生数学竞赛初赛试题及参考答案（非数学B类）.pdf" data-cat="非数学类">
-        <div class="ftags"><span class="tag nonmath">非数学B类</span><span class="tag ans">含答案</span></div>
-        <div class="fname">第十七届全国大学生数学竞赛初赛试题及参考答案（非数学B类）.pdf</div>
-        <div class="fmeta">7 页 · 1.7 MB</div>
-      </a>
-    </div>
+  <div class="file-actions"><a href="finals/edition-16/math-low-combined.pdf" download aria-label="下载第16届决赛数学类低年级组 · 试题与参考答案 PDF">下载 PDF</a><a class="source" href="https://www.cmathc.org.cn/stxz_3/" rel="noopener noreferrer" aria-label="第16届数学类低年级组 · 试题与参考答案的来源：大学生数学竞赛网">竞赛网站附件 ↗</a></div>
+</article><article class="file" data-cat="math" data-group="math-high" data-pages="16">
+  <a class="file-open" href="finals/edition-16/math-high-combined.pdf" title="第十六届全国大学生数学竞赛决赛（数学类高年级组）试题及答案解析">
+    <span class="ftags"><span class="tag math">数学类高年级组</span><span class="tag answer">试题与参考答案</span></span>
+    <span class="fname">数学类高年级组 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 16 页 · 457 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-16/math-high-combined.pdf" download aria-label="下载第16届决赛数学类高年级组 · 试题与参考答案 PDF">下载 PDF</a><a class="source" href="https://www.cmathc.org.cn/stxz_3/" rel="noopener noreferrer" aria-label="第16届数学类高年级组 · 试题与参考答案的来源：大学生数学竞赛网">竞赛网站附件 ↗</a></div>
+</article><article class="file" data-cat="nonmath" data-group="nonmath-a" data-pages="9">
+  <a class="file-open" href="finals/edition-16/nonmath-a-combined.pdf" title="第十六届全国大学生数学竞赛决赛（非数学A类）试题及答案解析">
+    <span class="ftags"><span class="tag nonmath">非数学A类</span><span class="tag answer">试题与参考答案</span></span>
+    <span class="fname">非数学A类 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 9 页 · 357 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-16/nonmath-a-combined.pdf" download aria-label="下载第16届决赛非数学A类 · 试题与参考答案 PDF">下载 PDF</a><a class="source" href="https://www.cmathc.org.cn/stxz_3/" rel="noopener noreferrer" aria-label="第16届非数学A类 · 试题与参考答案的来源：大学生数学竞赛网">竞赛网站附件 ↗</a></div>
+</article><article class="file" data-cat="nonmath" data-group="nonmath-b" data-pages="8">
+  <a class="file-open" href="finals/edition-16/nonmath-b-combined.pdf" title="第十六届全国大学生数学竞赛决赛（非数学B类）试题及答案解析">
+    <span class="ftags"><span class="tag nonmath">非数学B类</span><span class="tag answer">试题与参考答案</span></span>
+    <span class="fname">非数学B类 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 8 页 · 339 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-16/nonmath-b-combined.pdf" download aria-label="下载第16届决赛非数学B类 · 试题与参考答案 PDF">下载 PDF</a><a class="source" href="https://www.cmathc.org.cn/stxz_3/" rel="noopener noreferrer" aria-label="第16届非数学B类 · 试题与参考答案的来源：大学生数学竞赛网">竞赛网站附件 ↗</a></div>
+</article></div>
+</section>
+<section class="card" data-edition="15" aria-labelledby="final-15">
+  <header class="edition-heading"><div><h3 id="final-15">第 15 届<span class="stage-badge">决赛</span></h3><p>决赛举办年份 2024</p></div><span class="edition-count">3 个 PDF</span></header>
+  <div class="files"><article class="file" data-cat="math" data-group="math-low" data-pages="10">
+  <a class="file-open" href="finals/edition-15/math-low-combined.pdf" title="第十五届全国大学生数学竞赛决赛试题及参考答案（数学类低年级组）.pdf">
+    <span class="ftags"><span class="tag math">数学类低年级组</span><span class="tag answer">试题与参考答案</span></span>
+    <span class="fname">数学类低年级组 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 10 页 · 1.2 MB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-15/math-low-combined.pdf" download aria-label="下载第15届决赛数学类低年级组 · 试题与参考答案 PDF">下载 PDF</a><a class="source" href="https://github.com/IceFerryLing/Math_competition/blob/ed1830351c6012be31c06f4a519ef2c5ba4d36df/%E3%80%90%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98%E3%80%91%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98/%E7%AC%AC15%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E8%B5%9B%E9%A2%98/%E7%AC%AC%E5%8D%81%E4%BA%94%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E5%86%B3%E8%B5%9B%E8%AF%95%E9%A2%98%E5%8F%8A%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88%EF%BC%88%E6%95%B0%E5%AD%A6%E7%B1%BB%E4%BD%8E%E5%B9%B4%E7%BA%A7%E7%BB%84%EF%BC%89.pdf" rel="noopener noreferrer" aria-label="第15届数学类低年级组 · 试题与参考答案的来源：IceFerryLing / Math_competition（社区归档）">社区归档 ↗</a></div>
+</article><article class="file" data-cat="math" data-group="math-high" data-pages="15">
+  <a class="file-open" href="finals/edition-15/math-high-combined.pdf" title="第十五届全国大学生数学竞赛决赛试题及参考答案（数学类高年级组）.pdf">
+    <span class="ftags"><span class="tag math">数学类高年级组</span><span class="tag answer">试题与参考答案</span></span>
+    <span class="fname">数学类高年级组 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 15 页 · 3.1 MB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-15/math-high-combined.pdf" download aria-label="下载第15届决赛数学类高年级组 · 试题与参考答案 PDF">下载 PDF</a><a class="source" href="https://github.com/IceFerryLing/Math_competition/blob/ed1830351c6012be31c06f4a519ef2c5ba4d36df/%E3%80%90%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98%E3%80%91%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98/%E7%AC%AC15%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E8%B5%9B%E9%A2%98/%E7%AC%AC%E5%8D%81%E4%BA%94%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E5%86%B3%E8%B5%9B%E8%AF%95%E9%A2%98%E5%8F%8A%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88%EF%BC%88%E6%95%B0%E5%AD%A6%E7%B1%BB%E9%AB%98%E5%B9%B4%E7%BA%A7%E7%BB%84%EF%BC%89.pdf" rel="noopener noreferrer" aria-label="第15届数学类高年级组 · 试题与参考答案的来源：IceFerryLing / Math_competition（社区归档）">社区归档 ↗</a></div>
+</article><article class="file" data-cat="nonmath" data-group="nonmath" data-pages="5">
+  <a class="file-open" href="finals/edition-15/nonmath-combined.pdf" title="第十五届全国大学生数学竞赛决赛试题及参考答案（非数学类）.pdf">
+    <span class="ftags"><span class="tag nonmath">非数学类</span><span class="tag answer">试题与参考答案</span></span>
+    <span class="fname">非数学类 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 5 页 · 792 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-15/nonmath-combined.pdf" download aria-label="下载第15届决赛非数学类 · 试题与参考答案 PDF">下载 PDF</a><a class="source" href="https://github.com/IceFerryLing/Math_competition/blob/ed1830351c6012be31c06f4a519ef2c5ba4d36df/%E3%80%90%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98%E3%80%91%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98/%E7%AC%AC15%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E8%B5%9B%E9%A2%98/%E7%AC%AC%E5%8D%81%E4%BA%94%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E5%86%B3%E8%B5%9B%E8%AF%95%E9%A2%98%E5%8F%8A%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88%EF%BC%88%E9%9D%9E%E6%95%B0%E5%AD%A6%E7%B1%BB%EF%BC%89.pdf" rel="noopener noreferrer" aria-label="第15届非数学类 · 试题与参考答案的来源：IceFerryLing / Math_competition（社区归档）">社区归档 ↗</a></div>
+</article></div>
+</section>
+<section class="card" data-edition="14" aria-labelledby="final-14">
+  <header class="edition-heading"><div><h3 id="final-14">第 14 届<span class="stage-badge">决赛</span></h3><p>决赛举办年份 2023 · 2023年5月举办</p></div><span class="edition-count">3 个 PDF</span></header>
+  <div class="files"><article class="file" data-cat="math" data-group="math-low" data-pages="12">
+  <a class="file-open" href="finals/edition-14/math-low-combined.pdf" title="2023年第14届决赛数学类低年级组试题及参考解答.pdf">
+    <span class="ftags"><span class="tag math">数学类低年级组</span><span class="tag answer">试题与参考答案</span></span>
+    <span class="fname">数学类低年级组 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 12 页 · 909 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-14/math-low-combined.pdf" download aria-label="下载第14届决赛数学类低年级组 · 试题与参考答案 PDF">下载 PDF</a><a class="source" href="http://cmathc.cn/article/143.html" rel="noopener noreferrer" aria-label="第14届数学类低年级组 · 试题与参考答案的来源：大学生数学竞赛网">竞赛网站附件 ↗</a></div>
+</article><article class="file" data-cat="math" data-group="math-high" data-pages="19">
+  <a class="file-open" href="finals/edition-14/math-high-combined.pdf" title="2023年第14届决赛数学类高年级组试题及参考解答.pdf">
+    <span class="ftags"><span class="tag math">数学类高年级组</span><span class="tag answer">试题与参考答案</span></span>
+    <span class="fname">数学类高年级组 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 19 页 · 1.6 MB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-14/math-high-combined.pdf" download aria-label="下载第14届决赛数学类高年级组 · 试题与参考答案 PDF">下载 PDF</a><a class="source" href="http://cmathc.cn/article/143.html" rel="noopener noreferrer" aria-label="第14届数学类高年级组 · 试题与参考答案的来源：大学生数学竞赛网">竞赛网站附件 ↗</a></div>
+</article><article class="file" data-cat="nonmath" data-group="nonmath" data-pages="6">
+  <a class="file-open" href="finals/edition-14/nonmath-combined.pdf" title="2023年第14届决赛非数学类试题及参考解答.pdf">
+    <span class="ftags"><span class="tag nonmath">非数学类</span><span class="tag answer">试题与参考答案</span></span>
+    <span class="fname">非数学类 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 6 页 · 575 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-14/nonmath-combined.pdf" download aria-label="下载第14届决赛非数学类 · 试题与参考答案 PDF">下载 PDF</a><a class="source" href="http://cmathc.cn/article/143.html" rel="noopener noreferrer" aria-label="第14届非数学类 · 试题与参考答案的来源：大学生数学竞赛网">竞赛网站附件 ↗</a></div>
+</article></div>
+</section>
+<section class="card" data-edition="13" aria-labelledby="final-13">
+  <header class="edition-heading"><div><h3 id="final-13">第 13 届<span class="stage-badge">决赛</span></h3><p>决赛举办年份 2023 · 2023年3月举办</p></div><span class="edition-count">3 个 PDF</span></header>
+  <div class="files"><article class="file" data-cat="math" data-group="math-low" data-pages="13">
+  <a class="file-open" href="finals/edition-13/math-low-combined.pdf" title="第十三届全国大学生数学竞赛决赛试题及参考答案（数学类低年级组）.pdf">
+    <span class="ftags"><span class="tag math">数学类低年级组</span><span class="tag answer">试题与参考答案</span></span>
+    <span class="fname">数学类低年级组 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 13 页 · 1.6 MB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-13/math-low-combined.pdf" download aria-label="下载第13届决赛数学类低年级组 · 试题与参考答案 PDF">下载 PDF</a><a class="source" href="https://github.com/IceFerryLing/Math_competition/blob/ed1830351c6012be31c06f4a519ef2c5ba4d36df/%E3%80%90%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98%E3%80%91%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98/%E7%AC%AC13%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E8%B5%9B%E9%A2%98/%E7%AC%AC%E5%8D%81%E4%B8%89%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E5%86%B3%E8%B5%9B%E8%AF%95%E9%A2%98%E5%8F%8A%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88%EF%BC%88%E6%95%B0%E5%AD%A6%E7%B1%BB%E4%BD%8E%E5%B9%B4%E7%BA%A7%E7%BB%84%EF%BC%89.pdf" rel="noopener noreferrer" aria-label="第13届数学类低年级组 · 试题与参考答案的来源：IceFerryLing / Math_competition（社区归档）">社区归档 ↗</a></div>
+</article><article class="file" data-cat="math" data-group="math-high" data-pages="16">
+  <a class="file-open" href="finals/edition-13/math-high-combined.pdf" title="第十三届全国大学生数学竞赛决赛试题及参考答案（数学类高年级组）.pdf">
+    <span class="ftags"><span class="tag math">数学类高年级组</span><span class="tag answer">试题与参考答案</span></span>
+    <span class="fname">数学类高年级组 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 16 页 · 2.0 MB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-13/math-high-combined.pdf" download aria-label="下载第13届决赛数学类高年级组 · 试题与参考答案 PDF">下载 PDF</a><a class="source" href="https://github.com/IceFerryLing/Math_competition/blob/ed1830351c6012be31c06f4a519ef2c5ba4d36df/%E3%80%90%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98%E3%80%91%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98/%E7%AC%AC13%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E8%B5%9B%E9%A2%98/%E7%AC%AC%E5%8D%81%E4%B8%89%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E5%86%B3%E8%B5%9B%E8%AF%95%E9%A2%98%E5%8F%8A%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88%EF%BC%88%E6%95%B0%E5%AD%A6%E7%B1%BB%E9%AB%98%E5%B9%B4%E7%BA%A7%E7%BB%84%EF%BC%89.pdf" rel="noopener noreferrer" aria-label="第13届数学类高年级组 · 试题与参考答案的来源：IceFerryLing / Math_competition（社区归档）">社区归档 ↗</a></div>
+</article><article class="file" data-cat="nonmath" data-group="nonmath" data-pages="6">
+  <a class="file-open" href="finals/edition-13/nonmath-combined.pdf" title="第十三届全国大学生数学竞赛决赛试题及参考答案（非数学类）.pdf">
+    <span class="ftags"><span class="tag nonmath">非数学类</span><span class="tag answer">试题与参考答案</span></span>
+    <span class="fname">非数学类 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 6 页 · 864 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-13/nonmath-combined.pdf" download aria-label="下载第13届决赛非数学类 · 试题与参考答案 PDF">下载 PDF</a><a class="source" href="https://github.com/IceFerryLing/Math_competition/blob/ed1830351c6012be31c06f4a519ef2c5ba4d36df/%E3%80%90%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98%E3%80%91%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98/%E7%AC%AC13%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E8%B5%9B%E9%A2%98/%E7%AC%AC%E5%8D%81%E4%B8%89%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E5%86%B3%E8%B5%9B%E8%AF%95%E9%A2%98%E5%8F%8A%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88%EF%BC%88%E9%9D%9E%E6%95%B0%E5%AD%A6%E7%B1%BB%EF%BC%89.pdf" rel="noopener noreferrer" aria-label="第13届非数学类 · 试题与参考答案的来源：IceFerryLing / Math_competition（社区归档）">社区归档 ↗</a></div>
+</article></div>
+</section>
+<section class="card" data-edition="12" aria-labelledby="final-12">
+  <header class="edition-heading"><div><h3 id="final-12">第 12 届<span class="stage-badge">决赛</span></h3><p>决赛举办年份 2021 · 2021年5月举办</p></div><span class="edition-count">3 个 PDF</span></header>
+  <div class="files"><article class="file" data-cat="math" data-group="math-low" data-pages="14">
+  <a class="file-open" href="finals/edition-12/math-low-combined.pdf" title="第12届决赛试卷数学类低年级组解答.pdf">
+    <span class="ftags"><span class="tag math">数学类低年级组</span><span class="tag answer">试题与参考答案</span></span>
+    <span class="fname">数学类低年级组 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 14 页 · 605 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-12/math-low-combined.pdf" download aria-label="下载第12届决赛数学类低年级组 · 试题与参考答案 PDF">下载 PDF</a><a class="source" href="http://cmathc.cn/article/124.html" rel="noopener noreferrer" aria-label="第12届数学类低年级组 · 试题与参考答案的来源：大学生数学竞赛网">竞赛网站附件 ↗</a></div>
+</article><article class="file" data-cat="math" data-group="math-high" data-pages="20">
+  <a class="file-open" href="finals/edition-12/math-high-combined.pdf" title="第12届决赛试卷数学类高年级组解答.pdf">
+    <span class="ftags"><span class="tag math">数学类高年级组</span><span class="tag answer">试题与参考答案</span></span>
+    <span class="fname">数学类高年级组 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 20 页 · 627 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-12/math-high-combined.pdf" download aria-label="下载第12届决赛数学类高年级组 · 试题与参考答案 PDF">下载 PDF</a><a class="source" href="http://cmathc.cn/article/124.html" rel="noopener noreferrer" aria-label="第12届数学类高年级组 · 试题与参考答案的来源：大学生数学竞赛网">竞赛网站附件 ↗</a></div>
+</article><article class="file" data-cat="nonmath" data-group="nonmath" data-pages="6">
+  <a class="file-open" href="finals/edition-12/nonmath-combined.pdf" title="第12届决赛试题解答(非数学).pdf">
+    <span class="ftags"><span class="tag nonmath">非数学类</span><span class="tag answer">试题与参考答案</span></span>
+    <span class="fname">非数学类 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 6 页 · 252 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-12/nonmath-combined.pdf" download aria-label="下载第12届决赛非数学类 · 试题与参考答案 PDF">下载 PDF</a><a class="source" href="http://cmathc.cn/article/124.html" rel="noopener noreferrer" aria-label="第12届非数学类 · 试题与参考答案的来源：大学生数学竞赛网">竞赛网站附件 ↗</a></div>
+</article></div>
+</section>
+<section class="card" data-edition="11" aria-labelledby="final-11">
+  <header class="edition-heading"><div><h3 id="final-11">第 11 届<span class="stage-badge">决赛</span></h3><p>决赛举办年份 2021 · 2021年4月举办</p></div><span class="edition-count">3 个 PDF</span></header>
+  <div class="files"><article class="file" data-cat="math" data-group="math-low" data-pages="13">
+  <a class="file-open" href="finals/edition-11/math-low-combined.pdf" title="第11届决赛试卷低年级试题参考答案.pdf">
+    <span class="ftags"><span class="tag math">数学类低年级组</span><span class="tag answer">试题与参考答案</span></span>
+    <span class="fname">数学类低年级组 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 13 页 · 452 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-11/math-low-combined.pdf" download aria-label="下载第11届决赛数学类低年级组 · 试题与参考答案 PDF">下载 PDF</a><a class="source" href="http://cmathc.cn/article/125.html" rel="noopener noreferrer" aria-label="第11届数学类低年级组 · 试题与参考答案的来源：大学生数学竞赛网">竞赛网站附件 ↗</a></div>
+</article><article class="file" data-cat="math" data-group="math-high" data-pages="22">
+  <a class="file-open" href="finals/edition-11/math-high-combined.pdf" title="第11届决赛试卷高年级试题参考答案.pdf">
+    <span class="ftags"><span class="tag math">数学类高年级组</span><span class="tag answer">试题与参考答案</span></span>
+    <span class="fname">数学类高年级组 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 22 页 · 505 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-11/math-high-combined.pdf" download aria-label="下载第11届决赛数学类高年级组 · 试题与参考答案 PDF">下载 PDF</a><a class="source" href="http://cmathc.cn/article/125.html" rel="noopener noreferrer" aria-label="第11届数学类高年级组 · 试题与参考答案的来源：大学生数学竞赛网">竞赛网站附件 ↗</a></div>
+</article><article class="file" data-cat="nonmath" data-group="nonmath" data-pages="6">
+  <a class="file-open" href="finals/edition-11/nonmath-combined.pdf" title="第11届决赛非数学试题参考解答.pdf">
+    <span class="ftags"><span class="tag nonmath">非数学类</span><span class="tag answer">试题与参考答案</span></span>
+    <span class="fname">非数学类 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 6 页 · 233 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-11/nonmath-combined.pdf" download aria-label="下载第11届决赛非数学类 · 试题与参考答案 PDF">下载 PDF</a><a class="source" href="http://cmathc.cn/article/125.html" rel="noopener noreferrer" aria-label="第11届非数学类 · 试题与参考答案的来源：大学生数学竞赛网">竞赛网站附件 ↗</a></div>
+</article></div>
+</section>
+<section class="card" data-edition="10" aria-labelledby="final-10">
+  <header class="edition-heading"><div><h3 id="final-10">第 10 届<span class="stage-badge">决赛</span></h3><p>决赛举办年份 2019</p></div><span class="edition-count">6 个 PDF</span></header>
+  <div class="files"><article class="file" data-cat="math" data-group="math-low" data-pages="1">
+  <a class="file-open" href="finals/edition-10/math-low-questions.pdf" title="第10届全国大学生数学竞赛数学类一、二年级决赛试卷（2019年） .pdf">
+    <span class="ftags"><span class="tag math">数学类低年级组</span><span class="tag plain">试题</span></span>
+    <span class="fname">数学类低年级组 · 试题</span>
+    <span class="fmeta">PDF · 1 页 · 139 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-10/math-low-questions.pdf" download aria-label="下载第10届决赛数学类低年级组 · 试题 PDF">下载 PDF</a><a class="source" href="https://github.com/IceFerryLing/Math_competition/blob/ed1830351c6012be31c06f4a519ef2c5ba4d36df/%E3%80%90%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98%E3%80%91%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98/%E7%AC%AC10%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E8%B5%9B%E9%A2%98/%E7%AC%AC10%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E6%95%B0%E5%AD%A6%E7%B1%BB%E4%B8%80%E3%80%81%E4%BA%8C%E5%B9%B4%E7%BA%A7%E5%86%B3%E8%B5%9B%E8%AF%95%E5%8D%B7%EF%BC%882019%E5%B9%B4%EF%BC%89%20.pdf" rel="noopener noreferrer" aria-label="第10届数学类低年级组 · 试题的来源：IceFerryLing / Math_competition（社区归档）">社区归档 ↗</a></div>
+</article><article class="file" data-cat="math" data-group="math-low" data-pages="4">
+  <a class="file-open" href="finals/edition-10/math-low-solutions.pdf" title="第10届全国大学生数学竞赛数学类一、二年级决赛试卷参考答案（2019年） .pdf">
+    <span class="ftags"><span class="tag math">数学类低年级组</span><span class="tag answer">参考答案</span></span>
+    <span class="fname">数学类低年级组 · 参考答案</span>
+    <span class="fmeta">PDF · 4 页 · 202 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-10/math-low-solutions.pdf" download aria-label="下载第10届决赛数学类低年级组 · 参考答案 PDF">下载 PDF</a><a class="source" href="https://github.com/IceFerryLing/Math_competition/blob/ed1830351c6012be31c06f4a519ef2c5ba4d36df/%E3%80%90%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98%E3%80%91%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98/%E7%AC%AC10%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E8%B5%9B%E9%A2%98/%E7%AC%AC10%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E6%95%B0%E5%AD%A6%E7%B1%BB%E4%B8%80%E3%80%81%E4%BA%8C%E5%B9%B4%E7%BA%A7%E5%86%B3%E8%B5%9B%E8%AF%95%E5%8D%B7%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88%EF%BC%882019%E5%B9%B4%EF%BC%89%20.pdf" rel="noopener noreferrer" aria-label="第10届数学类低年级组 · 参考答案的来源：IceFerryLing / Math_competition（社区归档）">社区归档 ↗</a></div>
+</article><article class="file" data-cat="math" data-group="math-high" data-pages="2">
+  <a class="file-open" href="finals/edition-10/math-high-questions.pdf" title="第10届全国大学生数学竞赛数学类三、四年级决赛试卷（2019年） .pdf">
+    <span class="ftags"><span class="tag math">数学类高年级组</span><span class="tag plain">试题</span></span>
+    <span class="fname">数学类高年级组 · 试题</span>
+    <span class="fmeta">PDF · 2 页 · 180 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-10/math-high-questions.pdf" download aria-label="下载第10届决赛数学类高年级组 · 试题 PDF">下载 PDF</a><a class="source" href="https://github.com/IceFerryLing/Math_competition/blob/ed1830351c6012be31c06f4a519ef2c5ba4d36df/%E3%80%90%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98%E3%80%91%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98/%E7%AC%AC10%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E8%B5%9B%E9%A2%98/%E7%AC%AC10%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E6%95%B0%E5%AD%A6%E7%B1%BB%E4%B8%89%E3%80%81%E5%9B%9B%E5%B9%B4%E7%BA%A7%E5%86%B3%E8%B5%9B%E8%AF%95%E5%8D%B7%EF%BC%882019%E5%B9%B4%EF%BC%89%20.pdf" rel="noopener noreferrer" aria-label="第10届数学类高年级组 · 试题的来源：IceFerryLing / Math_competition（社区归档）">社区归档 ↗</a></div>
+</article><article class="file" data-cat="math" data-group="math-high" data-pages="7">
+  <a class="file-open" href="finals/edition-10/math-high-solutions.pdf" title="第10届全国大学生数学竞赛数学类三、四年级决赛试卷参考答案（2019年） .pdf">
+    <span class="ftags"><span class="tag math">数学类高年级组</span><span class="tag answer">参考答案</span></span>
+    <span class="fname">数学类高年级组 · 参考答案</span>
+    <span class="fmeta">PDF · 7 页 · 244 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-10/math-high-solutions.pdf" download aria-label="下载第10届决赛数学类高年级组 · 参考答案 PDF">下载 PDF</a><a class="source" href="https://github.com/IceFerryLing/Math_competition/blob/ed1830351c6012be31c06f4a519ef2c5ba4d36df/%E3%80%90%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98%E3%80%91%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98/%E7%AC%AC10%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E8%B5%9B%E9%A2%98/%E7%AC%AC10%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E6%95%B0%E5%AD%A6%E7%B1%BB%E4%B8%89%E3%80%81%E5%9B%9B%E5%B9%B4%E7%BA%A7%E5%86%B3%E8%B5%9B%E8%AF%95%E5%8D%B7%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88%EF%BC%882019%E5%B9%B4%EF%BC%89%20.pdf" rel="noopener noreferrer" aria-label="第10届数学类高年级组 · 参考答案的来源：IceFerryLing / Math_competition（社区归档）">社区归档 ↗</a></div>
+</article><article class="file" data-cat="nonmath" data-group="nonmath" data-pages="2">
+  <a class="file-open" href="finals/edition-10/nonmath-questions.pdf" title="第10届全国大学生数学竞赛非数学类决赛试卷（2019年） .pdf">
+    <span class="ftags"><span class="tag nonmath">非数学类</span><span class="tag plain">试题</span></span>
+    <span class="fname">非数学类 · 试题</span>
+    <span class="fmeta">PDF · 2 页 · 143 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-10/nonmath-questions.pdf" download aria-label="下载第10届决赛非数学类 · 试题 PDF">下载 PDF</a><a class="source" href="https://github.com/IceFerryLing/Math_competition/blob/ed1830351c6012be31c06f4a519ef2c5ba4d36df/%E3%80%90%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98%E3%80%91%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98/%E7%AC%AC10%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E8%B5%9B%E9%A2%98/%E7%AC%AC10%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E9%9D%9E%E6%95%B0%E5%AD%A6%E7%B1%BB%E5%86%B3%E8%B5%9B%E8%AF%95%E5%8D%B7%EF%BC%882019%E5%B9%B4%EF%BC%89%20.pdf" rel="noopener noreferrer" aria-label="第10届非数学类 · 试题的来源：IceFerryLing / Math_competition（社区归档）">社区归档 ↗</a></div>
+</article><article class="file" data-cat="nonmath" data-group="nonmath" data-pages="5">
+  <a class="file-open" href="finals/edition-10/nonmath-solutions.pdf" title="第10届全国大学生数学竞赛非数学类决赛试卷参考答案（2019年） .pdf">
+    <span class="ftags"><span class="tag nonmath">非数学类</span><span class="tag answer">参考答案</span></span>
+    <span class="fname">非数学类 · 参考答案</span>
+    <span class="fmeta">PDF · 5 页 · 208 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-10/nonmath-solutions.pdf" download aria-label="下载第10届决赛非数学类 · 参考答案 PDF">下载 PDF</a><a class="source" href="https://github.com/IceFerryLing/Math_competition/blob/ed1830351c6012be31c06f4a519ef2c5ba4d36df/%E3%80%90%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98%E3%80%91%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98/%E7%AC%AC10%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E8%B5%9B%E9%A2%98/%E7%AC%AC10%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E9%9D%9E%E6%95%B0%E5%AD%A6%E7%B1%BB%E5%86%B3%E8%B5%9B%E8%AF%95%E5%8D%B7%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88%EF%BC%882019%E5%B9%B4%EF%BC%89%20.pdf" rel="noopener noreferrer" aria-label="第10届非数学类 · 参考答案的来源：IceFerryLing / Math_competition（社区归档）">社区归档 ↗</a></div>
+</article></div>
+</section>
+<section class="card" data-edition="9" aria-labelledby="final-9">
+  <header class="edition-heading"><div><h3 id="final-9">第 9 届<span class="stage-badge">决赛</span></h3><p>决赛举办年份 2018</p></div><span class="edition-count">6 个 PDF</span></header>
+  <div class="files"><article class="file" data-cat="math" data-group="math-low" data-pages="6">
+  <a class="file-open" href="finals/edition-09/math-low-questions.pdf" title="数学类低年级组试题">
+    <span class="ftags"><span class="tag math">数学类低年级组</span><span class="tag plain">试题</span></span>
+    <span class="fname">数学类低年级组 · 试题</span>
+    <span class="fmeta">PDF · 6 页 · 260 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-09/math-low-questions.pdf" download aria-label="下载第9届决赛数学类低年级组 · 试题 PDF">下载 PDF</a><a class="source" href="https://math.ecnu.edu.cn/llin/20171028.HTM" rel="noopener noreferrer" aria-label="第9届数学类低年级组 · 试题的来源：华东师范大学数学科学学院">高校公开附件 ↗</a></div>
+</article><article class="file" data-cat="math" data-group="math-low" data-pages="8">
+  <a class="file-open" href="finals/edition-09/math-low-solutions.pdf" title="数学类低年级组试题解答">
+    <span class="ftags"><span class="tag math">数学类低年级组</span><span class="tag answer">参考答案</span></span>
+    <span class="fname">数学类低年级组 · 参考答案</span>
+    <span class="fmeta">PDF · 8 页 · 320 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-09/math-low-solutions.pdf" download aria-label="下载第9届决赛数学类低年级组 · 参考答案 PDF">下载 PDF</a><a class="source" href="https://math.ecnu.edu.cn/llin/20171028.HTM" rel="noopener noreferrer" aria-label="第9届数学类低年级组 · 参考答案的来源：华东师范大学数学科学学院">高校公开附件 ↗</a></div>
+</article><article class="file" data-cat="math" data-group="math-high" data-pages="10">
+  <a class="file-open" href="finals/edition-09/math-high-questions.pdf" title="数学类高年级组试题">
+    <span class="ftags"><span class="tag math">数学类高年级组</span><span class="tag plain">试题</span></span>
+    <span class="fname">数学类高年级组 · 试题</span>
+    <span class="fmeta">PDF · 10 页 · 289 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-09/math-high-questions.pdf" download aria-label="下载第9届决赛数学类高年级组 · 试题 PDF">下载 PDF</a><a class="source" href="https://math.ecnu.edu.cn/llin/20171028.HTM" rel="noopener noreferrer" aria-label="第9届数学类高年级组 · 试题的来源：华东师范大学数学科学学院">高校公开附件 ↗</a></div>
+</article><article class="file" data-cat="math" data-group="math-high" data-pages="18">
+  <a class="file-open" href="finals/edition-09/math-high-solutions.pdf" title="数学类高年级组试题解答">
+    <span class="ftags"><span class="tag math">数学类高年级组</span><span class="tag answer">参考答案</span></span>
+    <span class="fname">数学类高年级组 · 参考答案</span>
+    <span class="fmeta">PDF · 18 页 · 404 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-09/math-high-solutions.pdf" download aria-label="下载第9届决赛数学类高年级组 · 参考答案 PDF">下载 PDF</a><a class="source" href="https://math.ecnu.edu.cn/llin/20171028.HTM" rel="noopener noreferrer" aria-label="第9届数学类高年级组 · 参考答案的来源：华东师范大学数学科学学院">高校公开附件 ↗</a></div>
+</article><article class="file" data-cat="nonmath" data-group="nonmath" data-pages="4">
+  <a class="file-open" href="finals/edition-09/nonmath-questions.pdf" title="非数学类组试题">
+    <span class="ftags"><span class="tag nonmath">非数学类</span><span class="tag plain">试题</span></span>
+    <span class="fname">非数学类 · 试题</span>
+    <span class="fmeta">PDF · 4 页 · 167 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-09/nonmath-questions.pdf" download aria-label="下载第9届决赛非数学类 · 试题 PDF">下载 PDF</a><a class="source" href="https://math.ecnu.edu.cn/llin/20171028.HTM" rel="noopener noreferrer" aria-label="第9届非数学类 · 试题的来源：华东师范大学数学科学学院">高校公开附件 ↗</a></div>
+</article><article class="file" data-cat="nonmath" data-group="nonmath" data-pages="5">
+  <a class="file-open" href="finals/edition-09/nonmath-solutions.pdf" title="非数学类组试题解答">
+    <span class="ftags"><span class="tag nonmath">非数学类</span><span class="tag answer">参考答案</span></span>
+    <span class="fname">非数学类 · 参考答案</span>
+    <span class="fmeta">PDF · 5 页 · 166 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-09/nonmath-solutions.pdf" download aria-label="下载第9届决赛非数学类 · 参考答案 PDF">下载 PDF</a><a class="source" href="https://math.ecnu.edu.cn/llin/20171028.HTM" rel="noopener noreferrer" aria-label="第9届非数学类 · 参考答案的来源：华东师范大学数学科学学院">高校公开附件 ↗</a></div>
+</article></div>
+</section>
+<section class="card" data-edition="8" aria-labelledby="final-8">
+  <header class="edition-heading"><div><h3 id="final-8">第 8 届<span class="stage-badge">决赛</span></h3><p>决赛举办年份 2017</p></div><span class="edition-count">6 个 PDF</span></header>
+  <div class="files"><article class="file" data-cat="math" data-group="math-low" data-pages="1">
+  <a class="file-open" href="finals/edition-08/math-low-questions.pdf" title="数学类一、二年级试题">
+    <span class="ftags"><span class="tag math">数学类低年级组</span><span class="tag plain">试题</span></span>
+    <span class="fname">数学类低年级组 · 试题</span>
+    <span class="fmeta">PDF · 1 页 · 246 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-08/math-low-questions.pdf" download aria-label="下载第8届决赛数学类低年级组 · 试题 PDF">下载 PDF</a><a class="source" href="https://math.ecnu.edu.cn/llin/20161022.HTM" rel="noopener noreferrer" aria-label="第8届数学类低年级组 · 试题的来源：华东师范大学数学科学学院">高校公开附件 ↗</a></div><span class="version-note">来源站提供的单页试题排版；按来源标为试题，不承诺为考场原版式。</span>
+</article><article class="file" data-cat="math" data-group="math-low" data-pages="9">
+  <a class="file-open" href="finals/edition-08/math-low-solutions.pdf" title="数学类一、二年级试题解答">
+    <span class="ftags"><span class="tag math">数学类低年级组</span><span class="tag answer">参考答案</span></span>
+    <span class="fname">数学类低年级组 · 参考答案</span>
+    <span class="fmeta">PDF · 9 页 · 275 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-08/math-low-solutions.pdf" download aria-label="下载第8届决赛数学类低年级组 · 参考答案 PDF">下载 PDF</a><a class="source" href="https://math.ecnu.edu.cn/llin/20161022.HTM" rel="noopener noreferrer" aria-label="第8届数学类低年级组 · 参考答案的来源：华东师范大学数学科学学院">高校公开附件 ↗</a></div>
+</article><article class="file" data-cat="math" data-group="math-high" data-pages="1">
+  <a class="file-open" href="finals/edition-08/math-high-questions.pdf" title="数学类三、四年级试题">
+    <span class="ftags"><span class="tag math">数学类高年级组</span><span class="tag plain">试题</span></span>
+    <span class="fname">数学类高年级组 · 试题</span>
+    <span class="fmeta">PDF · 1 页 · 268 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-08/math-high-questions.pdf" download aria-label="下载第8届决赛数学类高年级组 · 试题 PDF">下载 PDF</a><a class="source" href="https://math.ecnu.edu.cn/llin/20161022.HTM" rel="noopener noreferrer" aria-label="第8届数学类高年级组 · 试题的来源：华东师范大学数学科学学院">高校公开附件 ↗</a></div><span class="version-note">来源站提供的单页试题排版；按来源标为试题，不承诺为考场原版式。</span>
+</article><article class="file" data-cat="math" data-group="math-high" data-pages="13">
+  <a class="file-open" href="finals/edition-08/math-high-solutions.pdf" title="数学类三、四年级试题解答">
+    <span class="ftags"><span class="tag math">数学类高年级组</span><span class="tag answer">参考答案</span></span>
+    <span class="fname">数学类高年级组 · 参考答案</span>
+    <span class="fmeta">PDF · 13 页 · 314 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-08/math-high-solutions.pdf" download aria-label="下载第8届决赛数学类高年级组 · 参考答案 PDF">下载 PDF</a><a class="source" href="https://math.ecnu.edu.cn/llin/20161022.HTM" rel="noopener noreferrer" aria-label="第8届数学类高年级组 · 参考答案的来源：华东师范大学数学科学学院">高校公开附件 ↗</a></div>
+</article><article class="file" data-cat="nonmath" data-group="nonmath" data-pages="2">
+  <a class="file-open" href="finals/edition-08/nonmath-questions.pdf" title="第8届全国大学生数学竞赛非数学类决赛试卷（2017年） .pdf">
+    <span class="ftags"><span class="tag nonmath">非数学类</span><span class="tag plain">试题</span></span>
+    <span class="fname">非数学类 · 试题</span>
+    <span class="fmeta">PDF · 2 页 · 148 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-08/nonmath-questions.pdf" download aria-label="下载第8届决赛非数学类 · 试题 PDF">下载 PDF</a><a class="source" href="https://github.com/IceFerryLing/Math_competition/blob/ed1830351c6012be31c06f4a519ef2c5ba4d36df/%E3%80%90%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98%E3%80%91%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98/%E7%AC%AC8%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E8%B5%9B%E9%A2%98/%E7%AC%AC8%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E9%9D%9E%E6%95%B0%E5%AD%A6%E7%B1%BB%E5%86%B3%E8%B5%9B%E8%AF%95%E5%8D%B7%EF%BC%882017%E5%B9%B4%EF%BC%89%20.pdf" rel="noopener noreferrer" aria-label="第8届非数学类 · 试题的来源：IceFerryLing / Math_competition（社区归档）">社区归档 ↗</a></div>
+</article><article class="file" data-cat="nonmath" data-group="nonmath" data-pages="5">
+  <a class="file-open" href="finals/edition-08/nonmath-solutions.pdf" title="非数学类试题解答">
+    <span class="ftags"><span class="tag nonmath">非数学类</span><span class="tag answer">参考答案</span></span>
+    <span class="fname">非数学类 · 参考答案</span>
+    <span class="fmeta">PDF · 5 页 · 146 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-08/nonmath-solutions.pdf" download aria-label="下载第8届决赛非数学类 · 参考答案 PDF">下载 PDF</a><a class="source" href="https://math.ecnu.edu.cn/llin/20161022.HTM" rel="noopener noreferrer" aria-label="第8届非数学类 · 参考答案的来源：华东师范大学数学科学学院">高校公开附件 ↗</a></div>
+</article></div>
+</section>
+<section class="card" data-edition="7" aria-labelledby="final-7">
+  <header class="edition-heading"><div><h3 id="final-7">第 7 届<span class="stage-badge">决赛</span></h3><p>决赛举办年份 2016</p></div><span class="edition-count">6 个 PDF</span></header>
+  <div class="files"><article class="file" data-cat="math" data-group="math-low" data-pages="1">
+  <a class="file-open" href="finals/edition-07/math-low-questions.pdf" title="数学类一、二年级试题">
+    <span class="ftags"><span class="tag math">数学类低年级组</span><span class="tag plain">试题</span></span>
+    <span class="fname">数学类低年级组 · 试题</span>
+    <span class="fmeta">PDF · 1 页 · 279 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-07/math-low-questions.pdf" download aria-label="下载第7届决赛数学类低年级组 · 试题 PDF">下载 PDF</a><a class="source" href="https://math.ecnu.edu.cn/llin/20151030.HTM" rel="noopener noreferrer" aria-label="第7届数学类低年级组 · 试题的来源：华东师范大学数学科学学院">高校公开附件 ↗</a></div>
+</article><article class="file" data-cat="math" data-group="math-low" data-pages="4">
+  <a class="file-open" href="finals/edition-07/math-low-solutions.pdf" title="数学类一、二年级试题解答">
+    <span class="ftags"><span class="tag math">数学类低年级组</span><span class="tag answer">参考答案</span></span>
+    <span class="fname">数学类低年级组 · 参考答案</span>
+    <span class="fmeta">PDF · 4 页 · 353 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-07/math-low-solutions.pdf" download aria-label="下载第7届决赛数学类低年级组 · 参考答案 PDF">下载 PDF</a><a class="source" href="https://math.ecnu.edu.cn/llin/20151030.HTM" rel="noopener noreferrer" aria-label="第7届数学类低年级组 · 参考答案的来源：华东师范大学数学科学学院">高校公开附件 ↗</a></div>
+</article><article class="file" data-cat="math" data-group="math-high" data-pages="1">
+  <a class="file-open" href="finals/edition-07/math-high-questions.pdf" title="数学类三、四年级试题">
+    <span class="ftags"><span class="tag math">数学类高年级组</span><span class="tag plain">试题</span></span>
+    <span class="fname">数学类高年级组 · 试题</span>
+    <span class="fmeta">PDF · 1 页 · 290 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-07/math-high-questions.pdf" download aria-label="下载第7届决赛数学类高年级组 · 试题 PDF">下载 PDF</a><a class="source" href="https://math.ecnu.edu.cn/llin/20151030.HTM" rel="noopener noreferrer" aria-label="第7届数学类高年级组 · 试题的来源：华东师范大学数学科学学院">高校公开附件 ↗</a></div>
+</article><article class="file" data-cat="math" data-group="math-high" data-pages="7">
+  <a class="file-open" href="finals/edition-07/math-high-solutions.pdf" title="数学类三、四年级试题解答">
+    <span class="ftags"><span class="tag math">数学类高年级组</span><span class="tag answer">参考答案</span></span>
+    <span class="fname">数学类高年级组 · 参考答案</span>
+    <span class="fmeta">PDF · 7 页 · 422 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-07/math-high-solutions.pdf" download aria-label="下载第7届决赛数学类高年级组 · 参考答案 PDF">下载 PDF</a><a class="source" href="https://math.ecnu.edu.cn/llin/20151030.HTM" rel="noopener noreferrer" aria-label="第7届数学类高年级组 · 参考答案的来源：华东师范大学数学科学学院">高校公开附件 ↗</a></div>
+</article><article class="file" data-cat="nonmath" data-group="nonmath" data-pages="2">
+  <a class="file-open" href="finals/edition-07/nonmath-questions.pdf" title="非数学类试题">
+    <span class="ftags"><span class="tag nonmath">非数学类</span><span class="tag plain">试题</span></span>
+    <span class="fname">非数学类 · 试题</span>
+    <span class="fmeta">PDF · 2 页 · 261 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-07/nonmath-questions.pdf" download aria-label="下载第7届决赛非数学类 · 试题 PDF">下载 PDF</a><a class="source" href="https://math.ecnu.edu.cn/llin/20151030.HTM" rel="noopener noreferrer" aria-label="第7届非数学类 · 试题的来源：华东师范大学数学科学学院">高校公开附件 ↗</a></div>
+</article><article class="file" data-cat="nonmath" data-group="nonmath" data-pages="3">
+  <a class="file-open" href="finals/edition-07/nonmath-solutions.pdf" title="非数学类试题解答">
+    <span class="ftags"><span class="tag nonmath">非数学类</span><span class="tag answer">参考答案</span></span>
+    <span class="fname">非数学类 · 参考答案</span>
+    <span class="fmeta">PDF · 3 页 · 357 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-07/nonmath-solutions.pdf" download aria-label="下载第7届决赛非数学类 · 参考答案 PDF">下载 PDF</a><a class="source" href="https://math.ecnu.edu.cn/llin/20151030.HTM" rel="noopener noreferrer" aria-label="第7届非数学类 · 参考答案的来源：华东师范大学数学科学学院">高校公开附件 ↗</a></div>
+</article></div>
+</section>
+<section class="card" data-edition="6" aria-labelledby="final-6">
+  <header class="edition-heading"><div><h3 id="final-6">第 6 届<span class="stage-badge">决赛</span></h3><p>决赛举办年份 2015</p></div><span class="edition-count">6 个 PDF</span></header>
+  <div class="files"><article class="file" data-cat="math" data-group="math-low" data-pages="6">
+  <a class="file-open" href="finals/edition-06/math-low-questions.pdf" title="数学类一、二年级试题">
+    <span class="ftags"><span class="tag math">数学类低年级组</span><span class="tag plain">试题</span></span>
+    <span class="fname">数学类低年级组 · 试题</span>
+    <span class="fmeta">PDF · 6 页 · 218 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-06/math-low-questions.pdf" download aria-label="下载第6届决赛数学类低年级组 · 试题 PDF">下载 PDF</a><a class="source" href="https://math.ecnu.edu.cn/llin/20141222.HTM" rel="noopener noreferrer" aria-label="第6届数学类低年级组 · 试题的来源：华东师范大学数学科学学院">高校公开附件 ↗</a></div>
+</article><article class="file" data-cat="math" data-group="math-low" data-pages="5">
+  <a class="file-open" href="finals/edition-06/math-low-solutions.pdf" title="数学类一、二年级试题解答">
+    <span class="ftags"><span class="tag math">数学类低年级组</span><span class="tag answer">参考答案</span></span>
+    <span class="fname">数学类低年级组 · 参考答案</span>
+    <span class="fmeta">PDF · 5 页 · 250 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-06/math-low-solutions.pdf" download aria-label="下载第6届决赛数学类低年级组 · 参考答案 PDF">下载 PDF</a><a class="source" href="https://math.ecnu.edu.cn/llin/20141222.HTM" rel="noopener noreferrer" aria-label="第6届数学类低年级组 · 参考答案的来源：华东师范大学数学科学学院">高校公开附件 ↗</a></div>
+</article><article class="file" data-cat="math" data-group="math-high" data-pages="11">
+  <a class="file-open" href="finals/edition-06/math-high-questions.pdf" title="数学类三、四年级试题">
+    <span class="ftags"><span class="tag math">数学类高年级组</span><span class="tag plain">试题</span></span>
+    <span class="fname">数学类高年级组 · 试题</span>
+    <span class="fmeta">PDF · 11 页 · 253 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-06/math-high-questions.pdf" download aria-label="下载第6届决赛数学类高年级组 · 试题 PDF">下载 PDF</a><a class="source" href="https://math.ecnu.edu.cn/llin/20141222.HTM" rel="noopener noreferrer" aria-label="第6届数学类高年级组 · 试题的来源：华东师范大学数学科学学院">高校公开附件 ↗</a></div>
+</article><article class="file" data-cat="math" data-group="math-high" data-pages="11">
+  <a class="file-open" href="finals/edition-06/math-high-solutions.pdf" title="数学类三、四年级试题解答">
+    <span class="ftags"><span class="tag math">数学类高年级组</span><span class="tag answer">参考答案</span></span>
+    <span class="fname">数学类高年级组 · 参考答案</span>
+    <span class="fmeta">PDF · 11 页 · 307 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-06/math-high-solutions.pdf" download aria-label="下载第6届决赛数学类高年级组 · 参考答案 PDF">下载 PDF</a><a class="source" href="https://math.ecnu.edu.cn/llin/20141222.HTM" rel="noopener noreferrer" aria-label="第6届数学类高年级组 · 参考答案的来源：华东师范大学数学科学学院">高校公开附件 ↗</a></div>
+</article><article class="file" data-cat="nonmath" data-group="nonmath" data-pages="3">
+  <a class="file-open" href="finals/edition-06/nonmath-questions.pdf" title="非数学类试题">
+    <span class="ftags"><span class="tag nonmath">非数学类</span><span class="tag plain">试题</span></span>
+    <span class="fname">非数学类 · 试题</span>
+    <span class="fmeta">PDF · 3 页 · 96 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-06/nonmath-questions.pdf" download aria-label="下载第6届决赛非数学类 · 试题 PDF">下载 PDF</a><a class="source" href="https://math.ecnu.edu.cn/llin/20141222.HTM" rel="noopener noreferrer" aria-label="第6届非数学类 · 试题的来源：华东师范大学数学科学学院">高校公开附件 ↗</a></div>
+</article><article class="file" data-cat="nonmath" data-group="nonmath" data-pages="6">
+  <a class="file-open" href="finals/edition-06/nonmath-solutions.pdf" title="非数学类试题解答">
+    <span class="ftags"><span class="tag nonmath">非数学类</span><span class="tag answer">参考答案</span></span>
+    <span class="fname">非数学类 · 参考答案</span>
+    <span class="fmeta">PDF · 6 页 · 142 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-06/nonmath-solutions.pdf" download aria-label="下载第6届决赛非数学类 · 参考答案 PDF">下载 PDF</a><a class="source" href="https://math.ecnu.edu.cn/llin/20141222.HTM" rel="noopener noreferrer" aria-label="第6届非数学类 · 参考答案的来源：华东师范大学数学科学学院">高校公开附件 ↗</a></div>
+</article></div>
+</section>
+<section class="card" data-edition="5" aria-labelledby="final-5">
+  <header class="edition-heading"><div><h3 id="final-5">第 5 届<span class="stage-badge">决赛</span></h3><p>决赛举办年份 2014</p></div><span class="edition-count">6 个 PDF</span></header>
+  <div class="files"><article class="file" data-cat="math" data-group="math-low" data-pages="6">
+  <a class="file-open" href="finals/edition-05/math-low-questions.pdf" title="数学类一、二年级试题">
+    <span class="ftags"><span class="tag math">数学类低年级组</span><span class="tag plain">试题</span></span>
+    <span class="fname">数学类低年级组 · 试题</span>
+    <span class="fmeta">PDF · 6 页 · 138 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-05/math-low-questions.pdf" download aria-label="下载第5届决赛数学类低年级组 · 试题 PDF">下载 PDF</a><a class="source" href="https://math.ecnu.edu.cn/llin/20140320.HTM" rel="noopener noreferrer" aria-label="第5届数学类低年级组 · 试题的来源：华东师范大学数学科学学院">高校公开附件 ↗</a></div>
+</article><article class="file" data-cat="math" data-group="math-low" data-pages="6">
+  <a class="file-open" href="finals/edition-05/math-low-solutions.pdf" title="数学类一、二年级试题解答">
+    <span class="ftags"><span class="tag math">数学类低年级组</span><span class="tag answer">参考答案</span></span>
+    <span class="fname">数学类低年级组 · 参考答案</span>
+    <span class="fmeta">PDF · 6 页 · 177 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-05/math-low-solutions.pdf" download aria-label="下载第5届决赛数学类低年级组 · 参考答案 PDF">下载 PDF</a><a class="source" href="https://math.ecnu.edu.cn/llin/20140320.HTM" rel="noopener noreferrer" aria-label="第5届数学类低年级组 · 参考答案的来源：华东师范大学数学科学学院">高校公开附件 ↗</a></div>
+</article><article class="file" data-cat="math" data-group="math-high" data-pages="11">
+  <a class="file-open" href="finals/edition-05/math-high-questions.pdf" title="数学类三、四年级试题">
+    <span class="ftags"><span class="tag math">数学类高年级组</span><span class="tag plain">试题</span></span>
+    <span class="fname">数学类高年级组 · 试题</span>
+    <span class="fmeta">PDF · 11 页 · 194 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-05/math-high-questions.pdf" download aria-label="下载第5届决赛数学类高年级组 · 试题 PDF">下载 PDF</a><a class="source" href="https://math.ecnu.edu.cn/llin/20140320.HTM" rel="noopener noreferrer" aria-label="第5届数学类高年级组 · 试题的来源：华东师范大学数学科学学院">高校公开附件 ↗</a></div>
+</article><article class="file" data-cat="math" data-group="math-high" data-pages="13">
+  <a class="file-open" href="finals/edition-05/math-high-solutions.pdf" title="数学类三、四年级试题解答">
+    <span class="ftags"><span class="tag math">数学类高年级组</span><span class="tag answer">参考答案</span></span>
+    <span class="fname">数学类高年级组 · 参考答案</span>
+    <span class="fmeta">PDF · 13 页 · 264 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-05/math-high-solutions.pdf" download aria-label="下载第5届决赛数学类高年级组 · 参考答案 PDF">下载 PDF</a><a class="source" href="https://math.ecnu.edu.cn/llin/20140320.HTM" rel="noopener noreferrer" aria-label="第5届数学类高年级组 · 参考答案的来源：华东师范大学数学科学学院">高校公开附件 ↗</a></div>
+</article><article class="file" data-cat="nonmath" data-group="nonmath" data-pages="9">
+  <a class="file-open" href="finals/edition-05/nonmath-questions.pdf" title="非数学类试题">
+    <span class="ftags"><span class="tag nonmath">非数学类</span><span class="tag plain">试题</span></span>
+    <span class="fname">非数学类 · 试题</span>
+    <span class="fmeta">PDF · 9 页 · 219 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-05/nonmath-questions.pdf" download aria-label="下载第5届决赛非数学类 · 试题 PDF">下载 PDF</a><a class="source" href="https://math.ecnu.edu.cn/llin/20140320.HTM" rel="noopener noreferrer" aria-label="第5届非数学类 · 试题的来源：华东师范大学数学科学学院">高校公开附件 ↗</a></div>
+</article><article class="file" data-cat="nonmath" data-group="nonmath" data-pages="6">
+  <a class="file-open" href="finals/edition-05/nonmath-solutions.pdf" title="非数学类试题解答">
+    <span class="ftags"><span class="tag nonmath">非数学类</span><span class="tag answer">参考答案</span></span>
+    <span class="fname">非数学类 · 参考答案</span>
+    <span class="fmeta">PDF · 6 页 · 391 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-05/nonmath-solutions.pdf" download aria-label="下载第5届决赛非数学类 · 参考答案 PDF">下载 PDF</a><a class="source" href="https://math.ecnu.edu.cn/llin/20140320.HTM" rel="noopener noreferrer" aria-label="第5届非数学类 · 参考答案的来源：华东师范大学数学科学学院">高校公开附件 ↗</a></div>
+</article></div>
+</section>
+<section class="card" data-edition="4" aria-labelledby="final-4">
+  <header class="edition-heading"><div><h3 id="final-4">第 4 届<span class="stage-badge">决赛</span></h3><p>决赛举办年份 2013 · 数学类未分高低年级</p></div><span class="edition-count">4 个 PDF</span></header>
+  <div class="files"><article class="file" data-cat="math" data-group="math" data-pages="2">
+  <a class="file-open" href="finals/edition-04/math-questions.pdf" title="第4届全国大学生数学竞赛数学类决赛试卷（2013年） .pdf">
+    <span class="ftags"><span class="tag math">数学类</span><span class="tag plain">试题</span></span>
+    <span class="fname">数学类 · 试题</span>
+    <span class="fmeta">PDF · 2 页 · 151 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-04/math-questions.pdf" download aria-label="下载第4届决赛数学类 · 试题 PDF">下载 PDF</a><a class="source" href="https://github.com/IceFerryLing/Math_competition/blob/ed1830351c6012be31c06f4a519ef2c5ba4d36df/%E3%80%90%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98%E3%80%91%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98/%E7%AC%AC4%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E8%B5%9B%E9%A2%98/%E7%AC%AC4%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E6%95%B0%E5%AD%A6%E7%B1%BB%E5%86%B3%E8%B5%9B%E8%AF%95%E5%8D%B7%EF%BC%882013%E5%B9%B4%EF%BC%89%20.pdf" rel="noopener noreferrer" aria-label="第4届数学类 · 试题的来源：IceFerryLing / Math_competition（社区归档）">社区归档 ↗</a></div>
+</article><article class="file" data-cat="math" data-group="math" data-pages="5">
+  <a class="file-open" href="finals/edition-04/math-solutions.pdf" title="第4届全国大学生数学竞赛数学类决赛试卷参考答案（2013年） .pdf">
+    <span class="ftags"><span class="tag math">数学类</span><span class="tag answer">参考答案</span></span>
+    <span class="fname">数学类 · 参考答案</span>
+    <span class="fmeta">PDF · 5 页 · 220 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-04/math-solutions.pdf" download aria-label="下载第4届决赛数学类 · 参考答案 PDF">下载 PDF</a><a class="source" href="https://github.com/IceFerryLing/Math_competition/blob/ed1830351c6012be31c06f4a519ef2c5ba4d36df/%E3%80%90%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98%E3%80%91%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98/%E7%AC%AC4%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E8%B5%9B%E9%A2%98/%E7%AC%AC4%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E6%95%B0%E5%AD%A6%E7%B1%BB%E5%86%B3%E8%B5%9B%E8%AF%95%E5%8D%B7%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88%EF%BC%882013%E5%B9%B4%EF%BC%89%20.pdf" rel="noopener noreferrer" aria-label="第4届数学类 · 参考答案的来源：IceFerryLing / Math_competition（社区归档）">社区归档 ↗</a></div>
+</article><article class="file" data-cat="nonmath" data-group="nonmath" data-pages="1">
+  <a class="file-open" href="finals/edition-04/nonmath-questions.pdf" title="第4届全国大学生数学竞赛非数学类决赛试卷（2013年） .pdf">
+    <span class="ftags"><span class="tag nonmath">非数学类</span><span class="tag plain">试题</span></span>
+    <span class="fname">非数学类 · 试题</span>
+    <span class="fmeta">PDF · 1 页 · 131 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-04/nonmath-questions.pdf" download aria-label="下载第4届决赛非数学类 · 试题 PDF">下载 PDF</a><a class="source" href="https://github.com/IceFerryLing/Math_competition/blob/ed1830351c6012be31c06f4a519ef2c5ba4d36df/%E3%80%90%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98%E3%80%91%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98/%E7%AC%AC4%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E8%B5%9B%E9%A2%98/%E7%AC%AC4%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E9%9D%9E%E6%95%B0%E5%AD%A6%E7%B1%BB%E5%86%B3%E8%B5%9B%E8%AF%95%E5%8D%B7%EF%BC%882013%E5%B9%B4%EF%BC%89%20.pdf" rel="noopener noreferrer" aria-label="第4届非数学类 · 试题的来源：IceFerryLing / Math_competition（社区归档）">社区归档 ↗</a></div>
+</article><article class="file" data-cat="nonmath" data-group="nonmath" data-pages="4">
+  <a class="file-open" href="finals/edition-04/nonmath-solutions.pdf" title="第4届全国大学生数学竞赛非数学类决赛试卷参考答案（2013年） .pdf">
+    <span class="ftags"><span class="tag nonmath">非数学类</span><span class="tag answer">参考答案</span></span>
+    <span class="fname">非数学类 · 参考答案</span>
+    <span class="fmeta">PDF · 4 页 · 191 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-04/nonmath-solutions.pdf" download aria-label="下载第4届决赛非数学类 · 参考答案 PDF">下载 PDF</a><a class="source" href="https://github.com/IceFerryLing/Math_competition/blob/ed1830351c6012be31c06f4a519ef2c5ba4d36df/%E3%80%90%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98%E3%80%91%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98/%E7%AC%AC4%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E8%B5%9B%E9%A2%98/%E7%AC%AC4%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E9%9D%9E%E6%95%B0%E5%AD%A6%E7%B1%BB%E5%86%B3%E8%B5%9B%E8%AF%95%E5%8D%B7%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88%EF%BC%882013%E5%B9%B4%EF%BC%89%20.pdf" rel="noopener noreferrer" aria-label="第4届非数学类 · 参考答案的来源：IceFerryLing / Math_competition（社区归档）">社区归档 ↗</a></div>
+</article></div>
+</section>
+<section class="card" data-edition="3" aria-labelledby="final-3">
+  <header class="edition-heading"><div><h3 id="final-3">第 3 届<span class="stage-badge">决赛</span></h3><p>决赛举办年份 2012 · 数学类未分高低年级</p></div><span class="edition-count">4 个 PDF</span></header>
+  <div class="files"><article class="file" data-cat="math" data-group="math" data-pages="1">
+  <a class="file-open" href="finals/edition-03/math-questions.pdf" title="第3届全国大学生数学竞赛数学类决赛试卷（2012年） .pdf">
+    <span class="ftags"><span class="tag math">数学类</span><span class="tag plain">试题</span></span>
+    <span class="fname">数学类 · 试题</span>
+    <span class="fmeta">PDF · 1 页 · 139 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-03/math-questions.pdf" download aria-label="下载第3届决赛数学类 · 试题 PDF">下载 PDF</a><a class="source" href="https://github.com/IceFerryLing/Math_competition/blob/ed1830351c6012be31c06f4a519ef2c5ba4d36df/%E3%80%90%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98%E3%80%91%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98/%E7%AC%AC3%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E8%B5%9B%E9%A2%98/%E7%AC%AC3%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E6%95%B0%E5%AD%A6%E7%B1%BB%E5%86%B3%E8%B5%9B%E8%AF%95%E5%8D%B7%EF%BC%882012%E5%B9%B4%EF%BC%89%20.pdf" rel="noopener noreferrer" aria-label="第3届数学类 · 试题的来源：IceFerryLing / Math_competition（社区归档）">社区归档 ↗</a></div>
+</article><article class="file" data-cat="math" data-group="math" data-pages="6">
+  <a class="file-open" href="finals/edition-03/math-solutions.pdf" title="第3届全国大学生数学竞赛数学类决赛试卷参考答案（2012年） .pdf">
+    <span class="ftags"><span class="tag math">数学类</span><span class="tag answer">参考答案</span></span>
+    <span class="fname">数学类 · 参考答案</span>
+    <span class="fmeta">PDF · 6 页 · 244 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-03/math-solutions.pdf" download aria-label="下载第3届决赛数学类 · 参考答案 PDF">下载 PDF</a><a class="source" href="https://github.com/IceFerryLing/Math_competition/blob/ed1830351c6012be31c06f4a519ef2c5ba4d36df/%E3%80%90%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98%E3%80%91%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98/%E7%AC%AC3%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E8%B5%9B%E9%A2%98/%E7%AC%AC3%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E6%95%B0%E5%AD%A6%E7%B1%BB%E5%86%B3%E8%B5%9B%E8%AF%95%E5%8D%B7%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88%EF%BC%882012%E5%B9%B4%EF%BC%89%20.pdf" rel="noopener noreferrer" aria-label="第3届数学类 · 参考答案的来源：IceFerryLing / Math_competition（社区归档）">社区归档 ↗</a></div>
+</article><article class="file" data-cat="nonmath" data-group="nonmath" data-pages="2">
+  <a class="file-open" href="finals/edition-03/nonmath-questions.pdf" title="第3届全国大学生数学竞赛非数学类决赛试卷（2012年） .pdf">
+    <span class="ftags"><span class="tag nonmath">非数学类</span><span class="tag plain">试题</span></span>
+    <span class="fname">非数学类 · 试题</span>
+    <span class="fmeta">PDF · 2 页 · 145 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-03/nonmath-questions.pdf" download aria-label="下载第3届决赛非数学类 · 试题 PDF">下载 PDF</a><a class="source" href="https://github.com/IceFerryLing/Math_competition/blob/ed1830351c6012be31c06f4a519ef2c5ba4d36df/%E3%80%90%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98%E3%80%91%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98/%E7%AC%AC3%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E8%B5%9B%E9%A2%98/%E7%AC%AC3%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E9%9D%9E%E6%95%B0%E5%AD%A6%E7%B1%BB%E5%86%B3%E8%B5%9B%E8%AF%95%E5%8D%B7%EF%BC%882012%E5%B9%B4%EF%BC%89%20.pdf" rel="noopener noreferrer" aria-label="第3届非数学类 · 试题的来源：IceFerryLing / Math_competition（社区归档）">社区归档 ↗</a></div>
+</article><article class="file" data-cat="nonmath" data-group="nonmath" data-pages="5">
+  <a class="file-open" href="finals/edition-03/nonmath-solutions.pdf" title="第3届全国大学生数学竞赛非数学类决赛试卷参考答案（2012年） .pdf">
+    <span class="ftags"><span class="tag nonmath">非数学类</span><span class="tag answer">参考答案</span></span>
+    <span class="fname">非数学类 · 参考答案</span>
+    <span class="fmeta">PDF · 5 页 · 200 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-03/nonmath-solutions.pdf" download aria-label="下载第3届决赛非数学类 · 参考答案 PDF">下载 PDF</a><a class="source" href="https://github.com/IceFerryLing/Math_competition/blob/ed1830351c6012be31c06f4a519ef2c5ba4d36df/%E3%80%90%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98%E3%80%91%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98/%E7%AC%AC3%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E8%B5%9B%E9%A2%98/%E7%AC%AC3%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E9%9D%9E%E6%95%B0%E5%AD%A6%E7%B1%BB%E5%86%B3%E8%B5%9B%E8%AF%95%E5%8D%B7%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88%EF%BC%882012%E5%B9%B4%EF%BC%89%20.pdf" rel="noopener noreferrer" aria-label="第3届非数学类 · 参考答案的来源：IceFerryLing / Math_competition（社区归档）">社区归档 ↗</a></div>
+</article></div>
+</section>
+<section class="card" data-edition="2" aria-labelledby="final-2">
+  <header class="edition-heading"><div><h3 id="final-2">第 2 届<span class="stage-badge">决赛</span></h3><p>决赛举办年份 2011 · 数学类未分高低年级</p></div><span class="edition-count">4 个 PDF</span></header>
+  <div class="files"><article class="file" data-cat="math" data-group="math" data-pages="2">
+  <a class="file-open" href="finals/edition-02/math-questions.pdf" title="数学类试题">
+    <span class="ftags"><span class="tag math">数学类</span><span class="tag plain">试题</span></span>
+    <span class="fname">数学类 · 试题</span>
+    <span class="fmeta">PDF · 2 页 · 119 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-02/math-questions.pdf" download aria-label="下载第2届决赛数学类 · 试题 PDF">下载 PDF</a><a class="source" href="https://math.ecnu.edu.cn/llin/20101030.HTM" rel="noopener noreferrer" aria-label="第2届数学类 · 试题的来源：华东师范大学数学科学学院">高校公开附件 ↗</a></div>
+</article><article class="file" data-cat="math" data-group="math" data-pages="5">
+  <a class="file-open" href="finals/edition-02/math-solutions.pdf" title="第2届全国大学生数学竞赛数学类决赛试卷参考答案（2011年） .pdf">
+    <span class="ftags"><span class="tag math">数学类</span><span class="tag answer">参考答案</span></span>
+    <span class="fname">数学类 · 参考答案</span>
+    <span class="fmeta">PDF · 5 页 · 214 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-02/math-solutions.pdf" download aria-label="下载第2届决赛数学类 · 参考答案 PDF">下载 PDF</a><a class="source" href="https://github.com/IceFerryLing/Math_competition/blob/ed1830351c6012be31c06f4a519ef2c5ba4d36df/%E3%80%90%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98%E3%80%91%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98/%E7%AC%AC2%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E8%B5%9B%E9%A2%98/%E7%AC%AC2%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E6%95%B0%E5%AD%A6%E7%B1%BB%E5%86%B3%E8%B5%9B%E8%AF%95%E5%8D%B7%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88%EF%BC%882011%E5%B9%B4%EF%BC%89%20.pdf" rel="noopener noreferrer" aria-label="第2届数学类 · 参考答案的来源：IceFerryLing / Math_competition（社区归档）">社区归档 ↗</a></div>
+</article><article class="file" data-cat="nonmath" data-group="nonmath" data-pages="2">
+  <a class="file-open" href="finals/edition-02/nonmath-questions.pdf" title="非数学类试题">
+    <span class="ftags"><span class="tag nonmath">非数学类</span><span class="tag plain">试题</span></span>
+    <span class="fname">非数学类 · 试题</span>
+    <span class="fmeta">PDF · 2 页 · 104 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-02/nonmath-questions.pdf" download aria-label="下载第2届决赛非数学类 · 试题 PDF">下载 PDF</a><a class="source" href="https://math.ecnu.edu.cn/llin/20101030.HTM" rel="noopener noreferrer" aria-label="第2届非数学类 · 试题的来源：华东师范大学数学科学学院">高校公开附件 ↗</a></div>
+</article><article class="file" data-cat="nonmath" data-group="nonmath" data-pages="7">
+  <a class="file-open" href="finals/edition-02/nonmath-solutions.pdf" title="第2届全国大学生数学竞赛非数学类决赛试卷参考答案（2011年） .pdf">
+    <span class="ftags"><span class="tag nonmath">非数学类</span><span class="tag answer">参考答案</span></span>
+    <span class="fname">非数学类 · 参考答案</span>
+    <span class="fmeta">PDF · 7 页 · 345 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-02/nonmath-solutions.pdf" download aria-label="下载第2届决赛非数学类 · 参考答案 PDF">下载 PDF</a><a class="source" href="https://github.com/IceFerryLing/Math_competition/blob/ed1830351c6012be31c06f4a519ef2c5ba4d36df/%E3%80%90%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98%E3%80%91%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E5%BE%80%E5%B1%8A%E7%9C%9F%E9%A2%98/%E7%AC%AC2%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E8%B5%9B%E9%A2%98/%E7%AC%AC2%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E9%9D%9E%E6%95%B0%E5%AD%A6%E7%B1%BB%E5%86%B3%E8%B5%9B%E8%AF%95%E5%8D%B7%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88%EF%BC%882011%E5%B9%B4%EF%BC%89%20.pdf" rel="noopener noreferrer" aria-label="第2届非数学类 · 参考答案的来源：IceFerryLing / Math_competition（社区归档）">社区归档 ↗</a></div>
+</article></div>
+</section>
+<section class="card" data-edition="1" aria-labelledby="final-1">
+  <header class="edition-heading"><div><h3 id="final-1">第 1 届<span class="stage-badge">决赛</span></h3><p>决赛举办年份 2010 · 数学类未分高低年级</p></div><span class="edition-count">4 个 PDF</span></header>
+  <div class="files"><article class="file" data-cat="math" data-group="math" data-pages="2">
+  <a class="file-open" href="finals/edition-01/math-questions.pdf" title="数学类试题">
+    <span class="ftags"><span class="tag math">数学类</span><span class="tag plain">试题</span></span>
+    <span class="fname">数学类 · 试题</span>
+    <span class="fmeta">PDF · 2 页 · 92 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-01/math-questions.pdf" download aria-label="下载第1届决赛数学类 · 试题 PDF">下载 PDF</a><a class="source" href="https://math.ecnu.edu.cn/llin/20091024.HTM" rel="noopener noreferrer" aria-label="第1届数学类 · 试题的来源：华东师范大学数学科学学院">高校公开附件 ↗</a></div>
+</article><article class="file" data-cat="math" data-group="math" data-pages="8">
+  <a class="file-open" href="finals/edition-01/math-solutions.pdf" title="数学类试题解答">
+    <span class="ftags"><span class="tag math">数学类</span><span class="tag answer">参考答案</span></span>
+    <span class="fname">数学类 · 参考答案</span>
+    <span class="fmeta">PDF · 8 页 · 147 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-01/math-solutions.pdf" download aria-label="下载第1届决赛数学类 · 参考答案 PDF">下载 PDF</a><a class="source" href="https://math.ecnu.edu.cn/llin/20091024.HTM" rel="noopener noreferrer" aria-label="第1届数学类 · 参考答案的来源：华东师范大学数学科学学院">高校公开附件 ↗</a></div>
+</article><article class="file" data-cat="nonmath" data-group="nonmath" data-pages="2">
+  <a class="file-open" href="finals/edition-01/nonmath-questions.pdf" title="非数学类试题">
+    <span class="ftags"><span class="tag nonmath">非数学类</span><span class="tag plain">试题</span></span>
+    <span class="fname">非数学类 · 试题</span>
+    <span class="fmeta">PDF · 2 页 · 81 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-01/nonmath-questions.pdf" download aria-label="下载第1届决赛非数学类 · 试题 PDF">下载 PDF</a><a class="source" href="https://math.ecnu.edu.cn/llin/20091024.HTM" rel="noopener noreferrer" aria-label="第1届非数学类 · 试题的来源：华东师范大学数学科学学院">高校公开附件 ↗</a></div>
+</article><article class="file" data-cat="nonmath" data-group="nonmath" data-pages="9">
+  <a class="file-open" href="finals/edition-01/nonmath-solutions.pdf" title="非数学类试题解答">
+    <span class="ftags"><span class="tag nonmath">非数学类</span><span class="tag answer">参考答案</span></span>
+    <span class="fname">非数学类 · 参考答案</span>
+    <span class="fmeta">PDF · 9 页 · 136 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="finals/edition-01/nonmath-solutions.pdf" download aria-label="下载第1届决赛非数学类 · 参考答案 PDF">下载 PDF</a><a class="source" href="https://math.ecnu.edu.cn/llin/20091024.HTM" rel="noopener noreferrer" aria-label="第1届非数学类 · 参考答案的来源：华东师范大学数学科学学院">高校公开附件 ↗</a></div>
+</article></div>
+</section>
   </section>
-  <section class="card">
-    <header><h2>第16届</h2><span class="yr">2024 年</span></header>
-    <div class="files">
-      <a class="file" rel="noopener" href="第11-17届/第十六届全国大学生数学竞赛初赛（数学A类）试题及答案解析.pdf" data-cat="数学类">
-        <div class="ftags"><span class="tag math">数学A类</span><span class="tag ans">含答案</span></div>
-        <div class="fname">第十六届全国大学生数学竞赛初赛（数学A类）试题及答案解析.pdf</div>
-        <div class="fmeta">12 页 · 0.4 MB</div>
-      </a>
-      <a class="file" rel="noopener" href="第11-17届/第十六届全国大学生数学竞赛初赛（数学B类）试题及答案解析.pdf" data-cat="数学类">
-        <div class="ftags"><span class="tag math">数学B类</span><span class="tag ans">含答案</span></div>
-        <div class="fname">第十六届全国大学生数学竞赛初赛（数学B类）试题及答案解析.pdf</div>
-        <div class="fmeta">10 页 · 0.4 MB</div>
-      </a>
-      <a class="file" rel="noopener" href="第11-17届/第十六届全国大学生数学竞赛初赛（非数学A类）试题及答案解析.pdf" data-cat="非数学类">
-        <div class="ftags"><span class="tag nonmath">非数学A类</span><span class="tag ans">含答案</span></div>
-        <div class="fname">第十六届全国大学生数学竞赛初赛（非数学A类）试题及答案解析.pdf</div>
-        <div class="fmeta">10 页 · 0.4 MB</div>
-      </a>
-      <a class="file" rel="noopener" href="第11-17届/第十六届全国大学生数学竞赛初赛（非数学B类）试题及答案解析.pdf" data-cat="非数学类">
-        <div class="ftags"><span class="tag nonmath">非数学B类</span><span class="tag ans">含答案</span></div>
-        <div class="fname">第十六届全国大学生数学竞赛初赛（非数学B类）试题及答案解析.pdf</div>
-        <div class="fmeta">8 页 · 0.3 MB</div>
-      </a>
-    </div>
+  <section class="stage-section" data-stage="preliminary" aria-labelledby="preliminary-heading">
+    <div class="section-heading"><h2 id="preliminary-heading">初赛真题</h2><span>第 10–17 届 · 保留原有文件链接</span></div>
+    <p class="section-intro">32 个 PDF、270 页；包含第13届补赛与第14届第二次补赛。历史组别按原文件标注，不将未分 A／B 的非数学类强行拆分。</p>
+    <a class="bundle" href="CMC初赛真题合集_第10-17届.pdf"><span><strong>初赛合并版 · 第10–17届</strong><small>既有单文件 270 页 · 带书签 · 不含本次新增决赛</small></span><span>打开 →</span></a>
+<section class="card" data-edition="17" aria-labelledby="preliminary-17">
+  <header class="edition-heading"><div><h3 id="preliminary-17">第 17 届<span class="stage-badge">初赛</span></h3><p>初赛年份 2025</p></div><span class="edition-count">4 个 PDF</span></header>
+  <div class="files"><article class="file" data-cat="math" data-group="math-a" data-pages="11">
+  <a class="file-open" href="第11-17届/第十七届全国大学生数学竞赛初赛试题及参考答案（数学A类）.pdf" title="第十七届全国大学生数学竞赛初赛试题及参考答案（数学A类）.pdf">
+    <span class="ftags"><span class="tag math">数学A类</span><span class="tag answer">试题与参考答案</span></span>
+    <span class="fname">数学A类 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 11 页 · 2.9 MB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="第11-17届/第十七届全国大学生数学竞赛初赛试题及参考答案（数学A类）.pdf" download aria-label="下载第17届初赛数学A类 · 试题与参考答案 PDF">下载 PDF</a></div>
+</article><article class="file" data-cat="math" data-group="math-b" data-pages="9">
+  <a class="file-open" href="第11-17届/第十七届全国大学生数学竞赛初赛试题及参考答案（数学B类）.pdf" title="第十七届全国大学生数学竞赛初赛试题及参考答案（数学B类）.pdf">
+    <span class="ftags"><span class="tag math">数学B类</span><span class="tag answer">试题与参考答案</span></span>
+    <span class="fname">数学B类 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 9 页 · 2.0 MB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="第11-17届/第十七届全国大学生数学竞赛初赛试题及参考答案（数学B类）.pdf" download aria-label="下载第17届初赛数学B类 · 试题与参考答案 PDF">下载 PDF</a></div>
+</article><article class="file" data-cat="nonmath" data-group="nonmath-a" data-pages="7">
+  <a class="file-open" href="第11-17届/第十七届全国大学生数学竞赛初赛试题及参考答案（非数学A类）.pdf" title="第十七届全国大学生数学竞赛初赛试题及参考答案（非数学A类）.pdf">
+    <span class="ftags"><span class="tag nonmath">非数学A类</span><span class="tag answer">试题与参考答案</span></span>
+    <span class="fname">非数学A类 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 7 页 · 1.7 MB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="第11-17届/第十七届全国大学生数学竞赛初赛试题及参考答案（非数学A类）.pdf" download aria-label="下载第17届初赛非数学A类 · 试题与参考答案 PDF">下载 PDF</a></div>
+</article><article class="file" data-cat="nonmath" data-group="nonmath-b" data-pages="7">
+  <a class="file-open" href="第11-17届/第十七届全国大学生数学竞赛初赛试题及参考答案（非数学B类）.pdf" title="第十七届全国大学生数学竞赛初赛试题及参考答案（非数学B类）.pdf">
+    <span class="ftags"><span class="tag nonmath">非数学B类</span><span class="tag answer">试题与参考答案</span></span>
+    <span class="fname">非数学B类 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 7 页 · 1.7 MB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="第11-17届/第十七届全国大学生数学竞赛初赛试题及参考答案（非数学B类）.pdf" download aria-label="下载第17届初赛非数学B类 · 试题与参考答案 PDF">下载 PDF</a></div>
+</article></div>
+</section>
+<section class="card" data-edition="16" aria-labelledby="preliminary-16">
+  <header class="edition-heading"><div><h3 id="preliminary-16">第 16 届<span class="stage-badge">初赛</span></h3><p>初赛年份 2024</p></div><span class="edition-count">4 个 PDF</span></header>
+  <div class="files"><article class="file" data-cat="math" data-group="math-a" data-pages="12">
+  <a class="file-open" href="第11-17届/第十六届全国大学生数学竞赛初赛（数学A类）试题及答案解析.pdf" title="第十六届全国大学生数学竞赛初赛（数学A类）试题及答案解析.pdf">
+    <span class="ftags"><span class="tag math">数学A类</span><span class="tag answer">试题与参考答案</span></span>
+    <span class="fname">数学A类 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 12 页 · 380 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="第11-17届/第十六届全国大学生数学竞赛初赛（数学A类）试题及答案解析.pdf" download aria-label="下载第16届初赛数学A类 · 试题与参考答案 PDF">下载 PDF</a></div>
+</article><article class="file" data-cat="math" data-group="math-b" data-pages="10">
+  <a class="file-open" href="第11-17届/第十六届全国大学生数学竞赛初赛（数学B类）试题及答案解析.pdf" title="第十六届全国大学生数学竞赛初赛（数学B类）试题及答案解析.pdf">
+    <span class="ftags"><span class="tag math">数学B类</span><span class="tag answer">试题与参考答案</span></span>
+    <span class="fname">数学B类 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 10 页 · 377 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="第11-17届/第十六届全国大学生数学竞赛初赛（数学B类）试题及答案解析.pdf" download aria-label="下载第16届初赛数学B类 · 试题与参考答案 PDF">下载 PDF</a></div>
+</article><article class="file" data-cat="nonmath" data-group="nonmath-a" data-pages="10">
+  <a class="file-open" href="第11-17届/第十六届全国大学生数学竞赛初赛（非数学A类）试题及答案解析.pdf" title="第十六届全国大学生数学竞赛初赛（非数学A类）试题及答案解析.pdf">
+    <span class="ftags"><span class="tag nonmath">非数学A类</span><span class="tag answer">试题与参考答案</span></span>
+    <span class="fname">非数学A类 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 10 页 · 360 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="第11-17届/第十六届全国大学生数学竞赛初赛（非数学A类）试题及答案解析.pdf" download aria-label="下载第16届初赛非数学A类 · 试题与参考答案 PDF">下载 PDF</a></div>
+</article><article class="file" data-cat="nonmath" data-group="nonmath-b" data-pages="8">
+  <a class="file-open" href="第11-17届/第十六届全国大学生数学竞赛初赛（非数学B类）试题及答案解析.pdf" title="第十六届全国大学生数学竞赛初赛（非数学B类）试题及答案解析.pdf">
+    <span class="ftags"><span class="tag nonmath">非数学B类</span><span class="tag answer">试题与参考答案</span></span>
+    <span class="fname">非数学B类 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 8 页 · 335 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="第11-17届/第十六届全国大学生数学竞赛初赛（非数学B类）试题及答案解析.pdf" download aria-label="下载第16届初赛非数学B类 · 试题与参考答案 PDF">下载 PDF</a></div>
+</article></div>
+</section>
+<section class="card" data-edition="15" aria-labelledby="preliminary-15">
+  <header class="edition-heading"><div><h3 id="preliminary-15">第 15 届<span class="stage-badge">初赛</span></h3><p>初赛年份 2023</p></div><span class="edition-count">4 个 PDF</span></header>
+  <div class="files"><article class="file" data-cat="math" data-group="math-a" data-pages="10">
+  <a class="file-open" href="第11-17届/第十五届全国大学生数学竞赛初赛（数学A类）试题及参考答案.pdf" title="第十五届全国大学生数学竞赛初赛（数学A类）试题及参考答案.pdf">
+    <span class="ftags"><span class="tag math">数学A类</span><span class="tag answer">试题与参考答案</span></span>
+    <span class="fname">数学A类 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 10 页 · 403 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="第11-17届/第十五届全国大学生数学竞赛初赛（数学A类）试题及参考答案.pdf" download aria-label="下载第15届初赛数学A类 · 试题与参考答案 PDF">下载 PDF</a></div>
+</article><article class="file" data-cat="math" data-group="math-b" data-pages="10">
+  <a class="file-open" href="第11-17届/第十五届全国大学生数学竞赛初赛（数学B类）试题及参考答案.pdf" title="第十五届全国大学生数学竞赛初赛（数学B类）试题及参考答案.pdf">
+    <span class="ftags"><span class="tag math">数学B类</span><span class="tag answer">试题与参考答案</span></span>
+    <span class="fname">数学B类 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 10 页 · 389 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="第11-17届/第十五届全国大学生数学竞赛初赛（数学B类）试题及参考答案.pdf" download aria-label="下载第15届初赛数学B类 · 试题与参考答案 PDF">下载 PDF</a></div>
+</article><article class="file" data-cat="nonmath" data-group="nonmath-a" data-pages="7">
+  <a class="file-open" href="第11-17届/第十五届全国大学生数学竞赛初赛（非数学A类）试题及参考答案.pdf" title="第十五届全国大学生数学竞赛初赛（非数学A类）试题及参考答案.pdf">
+    <span class="ftags"><span class="tag nonmath">非数学A类</span><span class="tag answer">试题与参考答案</span></span>
+    <span class="fname">非数学A类 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 7 页 · 363 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="第11-17届/第十五届全国大学生数学竞赛初赛（非数学A类）试题及参考答案.pdf" download aria-label="下载第15届初赛非数学A类 · 试题与参考答案 PDF">下载 PDF</a></div>
+</article><article class="file" data-cat="nonmath" data-group="nonmath-b" data-pages="7">
+  <a class="file-open" href="第11-17届/第十五届全国大学生数学竞赛初赛（非数学B类）试题及参考答案.pdf" title="第十五届全国大学生数学竞赛初赛（非数学B类）试题及参考答案.pdf">
+    <span class="ftags"><span class="tag nonmath">非数学B类</span><span class="tag answer">试题与参考答案</span></span>
+    <span class="fname">非数学B类 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 7 页 · 348 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="第11-17届/第十五届全国大学生数学竞赛初赛（非数学B类）试题及参考答案.pdf" download aria-label="下载第15届初赛非数学B类 · 试题与参考答案 PDF">下载 PDF</a></div>
+</article></div>
+</section>
+<section class="card" data-edition="14" aria-labelledby="preliminary-14">
+  <header class="edition-heading"><div><h3 id="preliminary-14">第 14 届<span class="stage-badge">初赛</span></h3><p>初赛年份 2022</p></div><span class="edition-count">6 个 PDF</span></header>
+  <div class="files"><article class="file" data-cat="math" data-group="math-a" data-pages="10">
+  <a class="file-open" href="第11-17届/第十四届全国大学生数学竞赛初赛（数学A类）试题及参考答案.pdf" title="第十四届全国大学生数学竞赛初赛（数学A类）试题及参考答案.pdf">
+    <span class="ftags"><span class="tag math">数学A类</span><span class="tag answer">试题与参考答案</span></span>
+    <span class="fname">数学A类 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 10 页 · 374 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="第11-17届/第十四届全国大学生数学竞赛初赛（数学A类）试题及参考答案.pdf" download aria-label="下载第14届初赛数学A类 · 试题与参考答案 PDF">下载 PDF</a></div>
+</article><article class="file" data-cat="math" data-group="math-a" data-pages="11">
+  <a class="file-open" href="第11-17届/第十四届全国大学生数学竞赛初赛（数学A类）第二次补赛试题及参考答案.pdf" title="第十四届全国大学生数学竞赛初赛（数学A类）第二次补赛试题及参考答案.pdf">
+    <span class="ftags"><span class="tag math">数学A类</span><span class="tag answer">试题与参考答案</span><span class="tag makeup">第二次补赛</span></span>
+    <span class="fname">数学A类 · 第二次补赛 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 11 页 · 1.4 MB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="第11-17届/第十四届全国大学生数学竞赛初赛（数学A类）第二次补赛试题及参考答案.pdf" download aria-label="下载第14届初赛数学A类 · 第二次补赛 · 试题与参考答案 PDF">下载 PDF</a></div>
+</article><article class="file" data-cat="math" data-group="math-b" data-pages="8">
+  <a class="file-open" href="第11-17届/第十四届全国大学生数学竞赛初赛（数学B类）试题及参考答案.pdf" title="第十四届全国大学生数学竞赛初赛（数学B类）试题及参考答案.pdf">
+    <span class="ftags"><span class="tag math">数学B类</span><span class="tag answer">试题与参考答案</span></span>
+    <span class="fname">数学B类 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 8 页 · 356 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="第11-17届/第十四届全国大学生数学竞赛初赛（数学B类）试题及参考答案.pdf" download aria-label="下载第14届初赛数学B类 · 试题与参考答案 PDF">下载 PDF</a></div>
+</article><article class="file" data-cat="math" data-group="math-b" data-pages="10">
+  <a class="file-open" href="第11-17届/第十四届全国大学生数学竞赛初赛（数学B类）第二次补赛试题及参考答案.pdf" title="第十四届全国大学生数学竞赛初赛（数学B类）第二次补赛试题及参考答案.pdf">
+    <span class="ftags"><span class="tag math">数学B类</span><span class="tag answer">试题与参考答案</span><span class="tag makeup">第二次补赛</span></span>
+    <span class="fname">数学B类 · 第二次补赛 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 10 页 · 1.2 MB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="第11-17届/第十四届全国大学生数学竞赛初赛（数学B类）第二次补赛试题及参考答案.pdf" download aria-label="下载第14届初赛数学B类 · 第二次补赛 · 试题与参考答案 PDF">下载 PDF</a></div>
+</article><article class="file" data-cat="nonmath" data-group="nonmath" data-pages="5">
+  <a class="file-open" href="第11-17届/第十四届全国大学生数学竞赛初赛（非数学类）试题及参考答案.pdf" title="第十四届全国大学生数学竞赛初赛（非数学类）试题及参考答案.pdf">
+    <span class="ftags"><span class="tag nonmath">非数学类</span><span class="tag answer">试题与参考答案</span></span>
+    <span class="fname">非数学类 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 5 页 · 215 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="第11-17届/第十四届全国大学生数学竞赛初赛（非数学类）试题及参考答案.pdf" download aria-label="下载第14届初赛非数学类 · 试题与参考答案 PDF">下载 PDF</a></div>
+</article><article class="file" data-cat="nonmath" data-group="nonmath" data-pages="5">
+  <a class="file-open" href="第11-17届/第十四届全国大学生数学竞赛初赛（非数学类）第二次补赛试题及参考答案.pdf" title="第十四届全国大学生数学竞赛初赛（非数学类）第二次补赛试题及参考答案.pdf">
+    <span class="ftags"><span class="tag nonmath">非数学类</span><span class="tag answer">试题与参考答案</span><span class="tag makeup">第二次补赛</span></span>
+    <span class="fname">非数学类 · 第二次补赛 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 5 页 · 211 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="第11-17届/第十四届全国大学生数学竞赛初赛（非数学类）第二次补赛试题及参考答案.pdf" download aria-label="下载第14届初赛非数学类 · 第二次补赛 · 试题与参考答案 PDF">下载 PDF</a></div>
+</article></div>
+</section>
+<section class="card" data-edition="13" aria-labelledby="preliminary-13">
+  <header class="edition-heading"><div><h3 id="preliminary-13">第 13 届<span class="stage-badge">初赛</span></h3><p>初赛年份 2021</p></div><span class="edition-count">6 个 PDF</span></header>
+  <div class="files"><article class="file" data-cat="math" data-group="math-a" data-pages="12">
+  <a class="file-open" href="第11-17届/第十三届全国大学生数学竞赛初赛（数学A类）试题及参考答案.pdf" title="第十三届全国大学生数学竞赛初赛（数学A类）试题及参考答案.pdf">
+    <span class="ftags"><span class="tag math">数学A类</span><span class="tag answer">试题与参考答案</span></span>
+    <span class="fname">数学A类 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 12 页 · 396 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="第11-17届/第十三届全国大学生数学竞赛初赛（数学A类）试题及参考答案.pdf" download aria-label="下载第13届初赛数学A类 · 试题与参考答案 PDF">下载 PDF</a></div>
+</article><article class="file" data-cat="math" data-group="math-a" data-pages="9">
+  <a class="file-open" href="第11-17届/第十三届全国大学生数学竞赛初赛（数学A类）补赛试题及参考答案.pdf" title="第十三届全国大学生数学竞赛初赛（数学A类）补赛试题及参考答案.pdf">
+    <span class="ftags"><span class="tag math">数学A类</span><span class="tag answer">试题与参考答案</span><span class="tag makeup">补赛</span></span>
+    <span class="fname">数学A类 · 补赛 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 9 页 · 386 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="第11-17届/第十三届全国大学生数学竞赛初赛（数学A类）补赛试题及参考答案.pdf" download aria-label="下载第13届初赛数学A类 · 补赛 · 试题与参考答案 PDF">下载 PDF</a></div>
+</article><article class="file" data-cat="math" data-group="math-b" data-pages="7">
+  <a class="file-open" href="第11-17届/第十三届全国大学生数学竞赛初赛（数学B类）试题及参考答案.pdf" title="第十三届全国大学生数学竞赛初赛（数学B类）试题及参考答案.pdf">
+    <span class="ftags"><span class="tag math">数学B类</span><span class="tag answer">试题与参考答案</span></span>
+    <span class="fname">数学B类 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 7 页 · 355 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="第11-17届/第十三届全国大学生数学竞赛初赛（数学B类）试题及参考答案.pdf" download aria-label="下载第13届初赛数学B类 · 试题与参考答案 PDF">下载 PDF</a></div>
+</article><article class="file" data-cat="math" data-group="math-b" data-pages="11">
+  <a class="file-open" href="第11-17届/第十三届全国大学生数学竞赛初赛（数学B类）补赛试题及参考答案.pdf" title="第十三届全国大学生数学竞赛初赛（数学B类）补赛试题及参考答案.pdf">
+    <span class="ftags"><span class="tag math">数学B类</span><span class="tag answer">试题与参考答案</span><span class="tag makeup">补赛</span></span>
+    <span class="fname">数学B类 · 补赛 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 11 页 · 410 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="第11-17届/第十三届全国大学生数学竞赛初赛（数学B类）补赛试题及参考答案.pdf" download aria-label="下载第13届初赛数学B类 · 补赛 · 试题与参考答案 PDF">下载 PDF</a></div>
+</article><article class="file" data-cat="nonmath" data-group="nonmath" data-pages="6">
+  <a class="file-open" href="第11-17届/第十三届全国大学生数学竞赛初赛（非数学类）试题及参考答案.pdf" title="第十三届全国大学生数学竞赛初赛（非数学类）试题及参考答案.pdf">
+    <span class="ftags"><span class="tag nonmath">非数学类</span><span class="tag answer">试题与参考答案</span></span>
+    <span class="fname">非数学类 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 6 页 · 323 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="第11-17届/第十三届全国大学生数学竞赛初赛（非数学类）试题及参考答案.pdf" download aria-label="下载第13届初赛非数学类 · 试题与参考答案 PDF">下载 PDF</a></div>
+</article><article class="file" data-cat="nonmath" data-group="nonmath" data-pages="8">
+  <a class="file-open" href="第11-17届/第十三届全国大学生数学竞赛初赛（非数学类）补赛试题及参考答案.pdf" title="第十三届全国大学生数学竞赛初赛（非数学类）补赛试题及参考答案.pdf">
+    <span class="ftags"><span class="tag nonmath">非数学类</span><span class="tag answer">试题与参考答案</span><span class="tag makeup">补赛</span></span>
+    <span class="fname">非数学类 · 补赛 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 8 页 · 340 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="第11-17届/第十三届全国大学生数学竞赛初赛（非数学类）补赛试题及参考答案.pdf" download aria-label="下载第13届初赛非数学类 · 补赛 · 试题与参考答案 PDF">下载 PDF</a></div>
+</article></div>
+</section>
+<section class="card" data-edition="12" aria-labelledby="preliminary-12">
+  <header class="edition-heading"><div><h3 id="preliminary-12">第 12 届<span class="stage-badge">初赛</span></h3><p>初赛年份 2020</p></div><span class="edition-count">3 个 PDF</span></header>
+  <div class="files"><article class="file" data-cat="math" data-group="math-a" data-pages="10">
+  <a class="file-open" href="第11-17届/第十二届全国大学生数学竞赛初赛（数学A类）试题及参考答案.pdf" title="第十二届全国大学生数学竞赛初赛（数学A类）试题及参考答案.pdf">
+    <span class="ftags"><span class="tag math">数学A类</span><span class="tag answer">试题与参考答案</span></span>
+    <span class="fname">数学A类 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 10 页 · 363 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="第11-17届/第十二届全国大学生数学竞赛初赛（数学A类）试题及参考答案.pdf" download aria-label="下载第12届初赛数学A类 · 试题与参考答案 PDF">下载 PDF</a></div>
+</article><article class="file" data-cat="math" data-group="math-b" data-pages="9">
+  <a class="file-open" href="第11-17届/第十二届全国大学生数学竞赛初赛（数学B类）试题及参考答案.pdf" title="第十二届全国大学生数学竞赛初赛（数学B类）试题及参考答案.pdf">
+    <span class="ftags"><span class="tag math">数学B类</span><span class="tag answer">试题与参考答案</span></span>
+    <span class="fname">数学B类 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 9 页 · 357 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="第11-17届/第十二届全国大学生数学竞赛初赛（数学B类）试题及参考答案.pdf" download aria-label="下载第12届初赛数学B类 · 试题与参考答案 PDF">下载 PDF</a></div>
+</article><article class="file" data-cat="nonmath" data-group="nonmath" data-pages="6">
+  <a class="file-open" href="第11-17届/第十二届全国大学生数学竞赛初赛（非数学类）试题及参考答案.pdf" title="第十二届全国大学生数学竞赛初赛（非数学类）试题及参考答案.pdf">
+    <span class="ftags"><span class="tag nonmath">非数学类</span><span class="tag answer">试题与参考答案</span></span>
+    <span class="fname">非数学类 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 6 页 · 361 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="第11-17届/第十二届全国大学生数学竞赛初赛（非数学类）试题及参考答案.pdf" download aria-label="下载第12届初赛非数学类 · 试题与参考答案 PDF">下载 PDF</a></div>
+</article></div>
+</section>
+<section class="card" data-edition="11" aria-labelledby="preliminary-11">
+  <header class="edition-heading"><div><h3 id="preliminary-11">第 11 届<span class="stage-badge">初赛</span></h3><p>初赛年份 2019</p></div><span class="edition-count">3 个 PDF</span></header>
+  <div class="files"><article class="file" data-cat="math" data-group="math-a" data-pages="9">
+  <a class="file-open" href="第11-17届/第十一届全国大学生数学竞赛初赛（数学A类）试题及参考答案.pdf" title="第十一届全国大学生数学竞赛初赛（数学A类）试题及参考答案.pdf">
+    <span class="ftags"><span class="tag math">数学A类</span><span class="tag answer">试题与参考答案</span></span>
+    <span class="fname">数学A类 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 9 页 · 263 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="第11-17届/第十一届全国大学生数学竞赛初赛（数学A类）试题及参考答案.pdf" download aria-label="下载第11届初赛数学A类 · 试题与参考答案 PDF">下载 PDF</a></div>
+</article><article class="file" data-cat="math" data-group="math-b" data-pages="11">
+  <a class="file-open" href="第11-17届/第十一届全国大学生数学竞赛初赛（数学B类）试题及参考答案.pdf" title="第十一届全国大学生数学竞赛初赛（数学B类）试题及参考答案.pdf">
+    <span class="ftags"><span class="tag math">数学B类</span><span class="tag answer">试题与参考答案</span></span>
+    <span class="fname">数学B类 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 11 页 · 214 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="第11-17届/第十一届全国大学生数学竞赛初赛（数学B类）试题及参考答案.pdf" download aria-label="下载第11届初赛数学B类 · 试题与参考答案 PDF">下载 PDF</a></div>
+</article><article class="file" data-cat="nonmath" data-group="nonmath" data-pages="4">
+  <a class="file-open" href="第11-17届/第十一届全国大学生数学竞赛初赛（非数学类）试题及参考答案.pdf" title="第十一届全国大学生数学竞赛初赛（非数学类）试题及参考答案.pdf">
+    <span class="ftags"><span class="tag nonmath">非数学类</span><span class="tag answer">试题与参考答案</span></span>
+    <span class="fname">非数学类 · 试题与参考答案</span>
+    <span class="fmeta">PDF · 4 页 · 135 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="第11-17届/第十一届全国大学生数学竞赛初赛（非数学类）试题及参考答案.pdf" download aria-label="下载第11届初赛非数学类 · 试题与参考答案 PDF">下载 PDF</a></div>
+</article></div>
+</section>
+<section class="card" data-edition="10" aria-labelledby="preliminary-10">
+  <header class="edition-heading"><div><h3 id="preliminary-10">第 10 届<span class="stage-badge">初赛</span></h3><p>初赛年份 2018</p></div><span class="edition-count">2 个 PDF</span></header>
+  <div class="files"><article class="file" data-cat="math" data-group="math" data-pages="6">
+  <a class="file-open" href="第1-10届/第十届（2018）全国大学生数学竞赛初赛（数学类）试题.pdf" title="第十届（2018）全国大学生数学竞赛初赛（数学类）试题.pdf">
+    <span class="ftags"><span class="tag math">数学类</span><span class="tag plain">试题</span></span>
+    <span class="fname">数学类 · 试题</span>
+    <span class="fmeta">PDF · 6 页 · 278 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="第1-10届/第十届（2018）全国大学生数学竞赛初赛（数学类）试题.pdf" download aria-label="下载第10届初赛数学类 · 试题 PDF">下载 PDF</a></div>
+</article><article class="file" data-cat="nonmath" data-group="nonmath" data-pages="5">
+  <a class="file-open" href="第1-10届/第十届（2018）全国大学生数学竞赛初赛（非数学类）试题.pdf" title="第十届（2018）全国大学生数学竞赛初赛（非数学类）试题.pdf">
+    <span class="ftags"><span class="tag nonmath">非数学类</span><span class="tag plain">试题</span></span>
+    <span class="fname">非数学类 · 试题</span>
+    <span class="fmeta">PDF · 5 页 · 202 KB <span class="open-hint">打开 →</span></span>
+  </a>
+  <div class="file-actions"><a href="第1-10届/第十届（2018）全国大学生数学竞赛初赛（非数学类）试题.pdf" download aria-label="下载第10届初赛非数学类 · 试题 PDF">下载 PDF</a></div>
+</article></div>
+</section>
   </section>
-  <section class="card">
-    <header><h2>第15届</h2><span class="yr">2023 年</span></header>
-    <div class="files">
-      <a class="file" rel="noopener" href="第11-17届/第十五届全国大学生数学竞赛初赛（数学A类）试题及参考答案.pdf" data-cat="数学类">
-        <div class="ftags"><span class="tag math">数学A类</span><span class="tag ans">含答案</span></div>
-        <div class="fname">第十五届全国大学生数学竞赛初赛（数学A类）试题及参考答案.pdf</div>
-        <div class="fmeta">10 页 · 0.4 MB</div>
-      </a>
-      <a class="file" rel="noopener" href="第11-17届/第十五届全国大学生数学竞赛初赛（数学B类）试题及参考答案.pdf" data-cat="数学类">
-        <div class="ftags"><span class="tag math">数学B类</span><span class="tag ans">含答案</span></div>
-        <div class="fname">第十五届全国大学生数学竞赛初赛（数学B类）试题及参考答案.pdf</div>
-        <div class="fmeta">10 页 · 0.4 MB</div>
-      </a>
-      <a class="file" rel="noopener" href="第11-17届/第十五届全国大学生数学竞赛初赛（非数学A类）试题及参考答案.pdf" data-cat="非数学类">
-        <div class="ftags"><span class="tag nonmath">非数学A类</span><span class="tag ans">含答案</span></div>
-        <div class="fname">第十五届全国大学生数学竞赛初赛（非数学A类）试题及参考答案.pdf</div>
-        <div class="fmeta">7 页 · 0.4 MB</div>
-      </a>
-      <a class="file" rel="noopener" href="第11-17届/第十五届全国大学生数学竞赛初赛（非数学B类）试题及参考答案.pdf" data-cat="非数学类">
-        <div class="ftags"><span class="tag nonmath">非数学B类</span><span class="tag ans">含答案</span></div>
-        <div class="fname">第十五届全国大学生数学竞赛初赛（非数学B类）试题及参考答案.pdf</div>
-        <div class="fmeta">7 页 · 0.3 MB</div>
-      </a>
-    </div>
-  </section>
-  <section class="card">
-    <header><h2>第14届</h2><span class="yr">2022 年</span></header>
-    <div class="files">
-      <a class="file" rel="noopener" href="第11-17届/第十四届全国大学生数学竞赛初赛（数学A类）第二次补赛试题及参考答案.pdf" data-cat="数学类">
-        <div class="ftags"><span class="tag math">数学A类</span><span class="tag bu">补赛</span><span class="tag ans">含答案</span></div>
-        <div class="fname">第十四届全国大学生数学竞赛初赛（数学A类）第二次补赛试题及参考答案.pdf</div>
-        <div class="fmeta">11 页 · 1.4 MB</div>
-      </a>
-      <a class="file" rel="noopener" href="第11-17届/第十四届全国大学生数学竞赛初赛（数学A类）试题及参考答案.pdf" data-cat="数学类">
-        <div class="ftags"><span class="tag math">数学A类</span><span class="tag ans">含答案</span></div>
-        <div class="fname">第十四届全国大学生数学竞赛初赛（数学A类）试题及参考答案.pdf</div>
-        <div class="fmeta">10 页 · 0.4 MB</div>
-      </a>
-      <a class="file" rel="noopener" href="第11-17届/第十四届全国大学生数学竞赛初赛（数学B类）第二次补赛试题及参考答案.pdf" data-cat="数学类">
-        <div class="ftags"><span class="tag math">数学B类</span><span class="tag bu">补赛</span><span class="tag ans">含答案</span></div>
-        <div class="fname">第十四届全国大学生数学竞赛初赛（数学B类）第二次补赛试题及参考答案.pdf</div>
-        <div class="fmeta">10 页 · 1.2 MB</div>
-      </a>
-      <a class="file" rel="noopener" href="第11-17届/第十四届全国大学生数学竞赛初赛（数学B类）试题及参考答案.pdf" data-cat="数学类">
-        <div class="ftags"><span class="tag math">数学B类</span><span class="tag ans">含答案</span></div>
-        <div class="fname">第十四届全国大学生数学竞赛初赛（数学B类）试题及参考答案.pdf</div>
-        <div class="fmeta">8 页 · 0.3 MB</div>
-      </a>
-      <a class="file" rel="noopener" href="第11-17届/第十四届全国大学生数学竞赛初赛（非数学类）第二次补赛试题及参考答案.pdf" data-cat="非数学类">
-        <div class="ftags"><span class="tag nonmath">非数学类</span><span class="tag bu">补赛</span><span class="tag ans">含答案</span></div>
-        <div class="fname">第十四届全国大学生数学竞赛初赛（非数学类）第二次补赛试题及参考答案.pdf</div>
-        <div class="fmeta">5 页 · 0.2 MB</div>
-      </a>
-      <a class="file" rel="noopener" href="第11-17届/第十四届全国大学生数学竞赛初赛（非数学类）试题及参考答案.pdf" data-cat="非数学类">
-        <div class="ftags"><span class="tag nonmath">非数学类</span><span class="tag ans">含答案</span></div>
-        <div class="fname">第十四届全国大学生数学竞赛初赛（非数学类）试题及参考答案.pdf</div>
-        <div class="fmeta">5 页 · 0.2 MB</div>
-      </a>
-    </div>
-  </section>
-  <section class="card">
-    <header><h2>第13届</h2><span class="yr">2021 年</span></header>
-    <div class="files">
-      <a class="file" rel="noopener" href="第11-17届/第十三届全国大学生数学竞赛初赛（数学A类）补赛试题及参考答案.pdf" data-cat="数学类">
-        <div class="ftags"><span class="tag math">数学A类</span><span class="tag bu">补赛</span><span class="tag ans">含答案</span></div>
-        <div class="fname">第十三届全国大学生数学竞赛初赛（数学A类）补赛试题及参考答案.pdf</div>
-        <div class="fmeta">9 页 · 0.4 MB</div>
-      </a>
-      <a class="file" rel="noopener" href="第11-17届/第十三届全国大学生数学竞赛初赛（数学A类）试题及参考答案.pdf" data-cat="数学类">
-        <div class="ftags"><span class="tag math">数学A类</span><span class="tag ans">含答案</span></div>
-        <div class="fname">第十三届全国大学生数学竞赛初赛（数学A类）试题及参考答案.pdf</div>
-        <div class="fmeta">12 页 · 0.4 MB</div>
-      </a>
-      <a class="file" rel="noopener" href="第11-17届/第十三届全国大学生数学竞赛初赛（数学B类）补赛试题及参考答案.pdf" data-cat="数学类">
-        <div class="ftags"><span class="tag math">数学B类</span><span class="tag bu">补赛</span><span class="tag ans">含答案</span></div>
-        <div class="fname">第十三届全国大学生数学竞赛初赛（数学B类）补赛试题及参考答案.pdf</div>
-        <div class="fmeta">11 页 · 0.4 MB</div>
-      </a>
-      <a class="file" rel="noopener" href="第11-17届/第十三届全国大学生数学竞赛初赛（数学B类）试题及参考答案.pdf" data-cat="数学类">
-        <div class="ftags"><span class="tag math">数学B类</span><span class="tag ans">含答案</span></div>
-        <div class="fname">第十三届全国大学生数学竞赛初赛（数学B类）试题及参考答案.pdf</div>
-        <div class="fmeta">7 页 · 0.3 MB</div>
-      </a>
-      <a class="file" rel="noopener" href="第11-17届/第十三届全国大学生数学竞赛初赛（非数学类）补赛试题及参考答案.pdf" data-cat="非数学类">
-        <div class="ftags"><span class="tag nonmath">非数学类</span><span class="tag bu">补赛</span><span class="tag ans">含答案</span></div>
-        <div class="fname">第十三届全国大学生数学竞赛初赛（非数学类）补赛试题及参考答案.pdf</div>
-        <div class="fmeta">8 页 · 0.3 MB</div>
-      </a>
-      <a class="file" rel="noopener" href="第11-17届/第十三届全国大学生数学竞赛初赛（非数学类）试题及参考答案.pdf" data-cat="非数学类">
-        <div class="ftags"><span class="tag nonmath">非数学类</span><span class="tag ans">含答案</span></div>
-        <div class="fname">第十三届全国大学生数学竞赛初赛（非数学类）试题及参考答案.pdf</div>
-        <div class="fmeta">6 页 · 0.3 MB</div>
-      </a>
-    </div>
-  </section>
-  <section class="card">
-    <header><h2>第12届</h2><span class="yr">2020 年</span></header>
-    <div class="files">
-      <a class="file" rel="noopener" href="第11-17届/第十二届全国大学生数学竞赛初赛（数学A类）试题及参考答案.pdf" data-cat="数学类">
-        <div class="ftags"><span class="tag math">数学A类</span><span class="tag ans">含答案</span></div>
-        <div class="fname">第十二届全国大学生数学竞赛初赛（数学A类）试题及参考答案.pdf</div>
-        <div class="fmeta">10 页 · 0.4 MB</div>
-      </a>
-      <a class="file" rel="noopener" href="第11-17届/第十二届全国大学生数学竞赛初赛（数学B类）试题及参考答案.pdf" data-cat="数学类">
-        <div class="ftags"><span class="tag math">数学B类</span><span class="tag ans">含答案</span></div>
-        <div class="fname">第十二届全国大学生数学竞赛初赛（数学B类）试题及参考答案.pdf</div>
-        <div class="fmeta">9 页 · 0.3 MB</div>
-      </a>
-      <a class="file" rel="noopener" href="第11-17届/第十二届全国大学生数学竞赛初赛（非数学类）试题及参考答案.pdf" data-cat="非数学类">
-        <div class="ftags"><span class="tag nonmath">非数学类</span><span class="tag ans">含答案</span></div>
-        <div class="fname">第十二届全国大学生数学竞赛初赛（非数学类）试题及参考答案.pdf</div>
-        <div class="fmeta">6 页 · 0.4 MB</div>
-      </a>
-    </div>
-  </section>
-  <section class="card">
-    <header><h2>第11届</h2><span class="yr">2019 年</span></header>
-    <div class="files">
-      <a class="file" rel="noopener" href="第11-17届/第十一届全国大学生数学竞赛初赛（数学A类）试题及参考答案.pdf" data-cat="数学类">
-        <div class="ftags"><span class="tag math">数学A类</span><span class="tag ans">含答案</span></div>
-        <div class="fname">第十一届全国大学生数学竞赛初赛（数学A类）试题及参考答案.pdf</div>
-        <div class="fmeta">9 页 · 0.3 MB</div>
-      </a>
-      <a class="file" rel="noopener" href="第11-17届/第十一届全国大学生数学竞赛初赛（数学B类）试题及参考答案.pdf" data-cat="数学类">
-        <div class="ftags"><span class="tag math">数学B类</span><span class="tag ans">含答案</span></div>
-        <div class="fname">第十一届全国大学生数学竞赛初赛（数学B类）试题及参考答案.pdf</div>
-        <div class="fmeta">11 页 · 0.2 MB</div>
-      </a>
-      <a class="file" rel="noopener" href="第11-17届/第十一届全国大学生数学竞赛初赛（非数学类）试题及参考答案.pdf" data-cat="非数学类">
-        <div class="ftags"><span class="tag nonmath">非数学类</span><span class="tag ans">含答案</span></div>
-        <div class="fname">第十一届全国大学生数学竞赛初赛（非数学类）试题及参考答案.pdf</div>
-        <div class="fmeta">4 页 · 0.1 MB</div>
-      </a>
-    </div>
-  </section>
-  <section class="card">
-    <header><h2>第10届</h2><span class="yr">2018 年</span></header>
-    <div class="files">
-      <a class="file" rel="noopener" href="第1-10届/第十届（2018）全国大学生数学竞赛初赛（数学类）试题.pdf" data-cat="数学类">
-        <div class="ftags"><span class="tag math">数学类</span><span class="tag noans">仅试题</span></div>
-        <div class="fname">第十届（2018）全国大学生数学竞赛初赛（数学类）试题.pdf</div>
-        <div class="fmeta">6 页 · 0.3 MB</div>
-      </a>
-      <a class="file" rel="noopener" href="第1-10届/第十届（2018）全国大学生数学竞赛初赛（非数学类）试题.pdf" data-cat="非数学类">
-        <div class="ftags"><span class="tag nonmath">非数学类</span><span class="tag noans">仅试题</span></div>
-        <div class="fname">第十届（2018）全国大学生数学竞赛初赛（非数学类）试题.pdf</div>
-        <div class="fmeta">5 页 · 0.2 MB</div>
-      </a>
-    </div>
-  </section>
-  <div class="note">
-    <h3>第 1–9 届（2009–2017）怎么拿？</h3>
+  <details class="notes" open>
+    <summary>来源、收录范围与使用说明</summary>
     <ul>
-      <li>组委会官网「试题下载」只上架了第 11 届起的卷子，更早年份没有官方 PDF 直链。</li>
-      <li>全套打包（第 1–17 届，含初赛 / 决赛 / 补赛）：<a href="https://pan.baidu.com/s/1yqZxS03k3PO7Wd4Aj4RjIQ?pwd=1234" target="_blank">百度网盘</a>，提取码 <code>1234</code>（来自大学生数学竞赛网汇总页）。</li>
-      <li>开源整理（第 1–15 届分届归档）：<a href="https://github.com/IceFerryLing/Math_competition" target="_blank">IceFerryLing/Math_competition</a>。</li>
-      <li>官方站点：<a href="https://www.cmathc.org.cn/csst/" target="_blank">初赛试题栏目</a> · <a href="https://www.cmathc.org.cn/stxz_1" target="_blank">试题下载中心</a>。</li>
+      <li><strong>决赛来源：</strong>35份来自华东师范大学公开附件，13份来自大学生数学竞赛网站，23份来自社区归档。每张决赛卡片均有来源链接；社区转载与参考解答不等于官方认证版本。</li>
+      <li><strong>版本说明：</strong>“试题”沿用来源标注，不承诺均为考场原版式或不含答案；部分为扫描件、重排版。参考答案仅供学习核对。本库未修改或自行拼合新增决赛 PDF。</li>
+      <li><strong>年份说明：</strong>第11、12届决赛均在2021年，第13、14届决赛均在2023年；不能按初赛年份直接推定决赛年份。</li>
+      <li><strong>覆盖缺口：</strong>本库未归档第1–9届初赛，也未归档第17届决赛。本页所示范围不是全部历史赛事资料的完整性声明。</li>
+      <li><strong>打开与下载：</strong>点击试卷主体在当前页打开 PDF，返回即可继续筛选；也可点击“下载 PDF”离线查看。若内嵌预览无法导航，请在系统浏览器打开本站网址；下载行为由浏览器决定。</li>
+      <li><strong>核验范围：</strong>新增决赛文件已检查格式、页数与可读取性，并抽查题头及部分解答页；未逐题校勘，不对所有解答的数学正确性作保证。</li>
     </ul>
-  </div>
-  <div class="hint">点卡片若提示无法打开，请双击同目录的「打开真题库.bat」，用系统浏览器打开本页（本地服务模式），PDF 即可正常查看。</div>
-  <footer>本地归档 · 来源：全国大学生数学竞赛官方站点及公开汇总页<br>试卷版权归中国数学会所有，仅供个人学习与备赛使用</footer>
-</div>
+    <div class="source-links"><a href="finals/catalog.json" download>下载决赛来源清单（JSON）</a><a href="https://math.ecnu.edu.cn/llin/">华东师范大学资料页</a><a href="https://www.cmathc.org.cn/stxz_3/">大学生数学竞赛网</a><a href="https://github.com/IceFerryLing/Math_competition">社区归档来源</a></div>
+  </details>
+  <footer class="footer"><p>更新日期：2026-11-06 · 试题与解答版权归原权利人所有，仅供学习与备赛交流。</p><p>本站为个人整理的资料索引，非赛事官方网站。若发现错标、缺页或版权问题，请在 <a href="https://github.com/nhatchim37-sudo/cmc-preliminary-papers/issues">仓库 Issue</a> 反馈。</p></footer>
+</main>
 <script>
-  const chips=document.querySelectorAll('.chip'), cards=document.querySelectorAll('.card');
-  chips.forEach(c=>c.addEventListener('click',()=>{
-    chips.forEach(x=>x.classList.remove('on')); c.classList.add('on');
-    const f=c.dataset.f;
-    cards.forEach(card=>{
-      let n=0;
-      card.querySelectorAll('.file').forEach(fi=>{
-        const ok=(f==='all'||fi.dataset.cat===f);
-        fi.style.display=ok?'':'none'; if(ok)n++;
-      });
-      card.style.display=n?'':'none';
+(() => {
+  'use strict';
+  const stageButtons = [...document.querySelectorAll('button[data-stage]')];
+  const categoryButtons = [...document.querySelectorAll('button[data-category]')];
+  const sections = [...document.querySelectorAll('.stage-section')];
+  const group = document.getElementById('group');
+  const edition = document.getElementById('edition');
+  const result = document.getElementById('result');
+  const empty = document.getElementById('empty');
+  const groupLabels = {'math':'数学类（不分组）','math-a':'数学A类','math-b':'数学B类','math-low':'数学类低年级组','math-high':'数学类高年级组','nonmath':'非数学类（不分组）','nonmath-a':'非数学A类','nonmath-b':'非数学B类'};
+  const records = sections.flatMap(section => [...section.querySelectorAll('.card')].flatMap(card => [...card.querySelectorAll('.file')].map(file => ({section, card, file, stage:section.dataset.stage, edition:card.dataset.edition, category:file.dataset.cat, group:file.dataset.group, pages:Number(file.dataset.pages)}))));
+  let state = {stage:'all', category:'all', group:'all', edition:'all'};
+  function rebuildGroups() {
+    const available = new Set(records.filter(r => (state.stage === 'all' || r.stage === state.stage) && (state.category === 'all' || r.category === state.category)).map(r => r.group));
+    group.replaceChildren();
+    const add = (value, label) => { const option = document.createElement('option'); option.value = value; option.textContent = label; group.append(option); };
+    add('all', '全部组别');
+    Object.entries(groupLabels).forEach(([key, label]) => { if (available.has(key)) add(key, label); });
+    if (!available.has(state.group)) state.group = 'all';
+    group.value = state.group;
+  }
+  function render(updateUrl = true) {
+    stageButtons.forEach(b => { const on = b.dataset.stage === state.stage; b.classList.toggle('on', on); b.setAttribute('aria-pressed', String(on)); });
+    categoryButtons.forEach(b => { const on = b.dataset.category === state.category; b.classList.toggle('on', on); b.setAttribute('aria-pressed', String(on)); });
+    edition.value = state.edition;
+    let count = 0, pages = 0;
+    const shownEditions = new Set();
+    records.forEach(r => {
+      const visible = (state.stage === 'all' || r.stage === state.stage) && (state.category === 'all' || r.category === state.category) && (state.group === 'all' || r.group === state.group) && (state.edition === 'all' || r.edition === state.edition);
+      r.file.hidden = !visible;
+      if (visible) { count++; pages += r.pages; shownEditions.add(r.edition); }
     });
-  }));
+    sections.forEach(section => {
+      let sectionVisible = false;
+      section.querySelectorAll('.card').forEach(card => {
+        const n = [...card.querySelectorAll('.file')].filter(file => !file.hidden).length;
+        card.hidden = n === 0;
+        card.querySelector('.edition-count').textContent = `${n} 个 PDF`;
+        if (n) sectionVisible = true;
+      });
+      section.hidden = !sectionVisible;
+    });
+    result.textContent = `当前显示 ${count} 个 PDF · ${shownEditions.size} 届 · ${pages} 页（试题与独立答案分别计数）`;
+    empty.hidden = count !== 0;
+    document.getElementById('empty-note').textContent = state.stage === 'final' && state.edition === '17' ? '第17届决赛尚未取得可核验的完整原卷 PDF，暂未归档。' : '可切换其他届次或组别；第1–9届初赛与第17届决赛尚未归档。';
+    if (updateUrl) {
+      const params = new URLSearchParams();
+      Object.entries(state).forEach(([key, value]) => { if (value !== 'all') params.set(key, value); });
+      try { history.replaceState(null, '', location.pathname + (params.size ? '?' + params.toString() : '') + location.hash); } catch (_) { /* Local file previews may restrict history. */ }
+    }
+  }
+  function loadUrl() {
+    const params = new URLSearchParams(location.search);
+    state = {
+      stage:['all','preliminary','final'].includes(params.get('stage')) ? params.get('stage') : 'all',
+      category:['all','math','nonmath'].includes(params.get('category')) ? params.get('category') : 'all',
+      group:Object.hasOwn(groupLabels, params.get('group')) ? params.get('group') : 'all',
+      edition:/^(?:[1-9]|1[0-7])$/.test(params.get('edition') || '') ? params.get('edition') : 'all'
+    };
+    rebuildGroups(); render(false);
+  }
+  stageButtons.forEach(b => b.addEventListener('click', () => { state.stage = b.dataset.stage; rebuildGroups(); render(); }));
+  categoryButtons.forEach(b => b.addEventListener('click', () => { state.category = b.dataset.category; rebuildGroups(); render(); }));
+  group.addEventListener('change', () => { state.group = group.value; render(); });
+  edition.addEventListener('change', () => { state.edition = edition.value; render(); });
+  document.getElementById('reset').addEventListener('click', () => { state = {stage:'all',category:'all',group:'all',edition:'all'}; rebuildGroups(); render(); });
+  window.addEventListener('popstate', loadUrl);
+  loadUrl();
+  document.querySelector('.filters').hidden = false;
+})();
 </script>
 </body>
 </html>
